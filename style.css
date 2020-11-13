@@ -1,0 +1,40 @@
+:root {
+    /* Variabler */
+    --clr-primary: #bb5a5a;
+    --clr-secondary: #e79e85;
+    --clr-primary-hover: #932432;
+    --clr-background-nav: #e79e85;
+    --border-radius: 0.5rem;
+}
+
+/*How to use var color: 
+background: var(--clr-primary);
+*/
+
+body {
+    font-family: "Helvetica", sans-serif;
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 800px) {
+}
