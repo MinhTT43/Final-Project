@@ -5,7 +5,14 @@
     --clr-primary-hover: #932432;
     --clr-background-nav: #e79e85;
     --border-radius: 0.5rem;
+    --font-size-p: 1 rem;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2 rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --line-height: 1.7em;
 }
+
 
 /*How to use var color: 
 background: var(--clr-primary);
@@ -33,8 +40,6 @@ p {
     font-size: 14px;
 }
 
-@media only screen and (max-width: 1200px) {
-}
+@media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 800px) {
-}
+@media only screen and (max-width: 800px) {}
