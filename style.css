@@ -29,15 +29,15 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: 30px;
+    font-size: var(--font-size-h2);
 }
 
 p {
-    font-size: 14px;
+    font-size: var(--font-size-p);
 }
 
 @media only screen and (max-width: 1200px) {}
