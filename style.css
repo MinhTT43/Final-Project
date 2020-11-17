@@ -3,12 +3,11 @@
     --clr-primary: #bb5a5a;
     --clr-secondary: #e79e85;
     --clr-primary-hover: #932432;
-    --clr-background-nav: #e79e85;
-    --clr-background-seperation: lightblue;
+    --clr-background-bar: lightblue;
     --border-radius: 0.5rem;
-    --font-size-p: 1 rem;
+    --font-size-p: 1.75rem;
     --font-size-h1: 2.5rem;
-    --font-size-h2: 2 rem;
+    --font-size-h2: 2rem;
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
     --line-height: 1.7em;
@@ -20,7 +19,7 @@ background: var(--clr-primary);
 */
 
 body {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Halvetica", sans-serif;
     background-color: white;
 }
 
@@ -39,29 +38,32 @@ h2 {
 
 p {
     font-size: var(--font-size-p);
-    line-height: 1.75rem;
+    line-height: 2.5rem;
+    word-spacing: 0.5rem;
     padding-top: 2%;
 }
 
 
-/* Nav-bar start */
+/* Code snip for 
+navbar */
 
 #nav-bar {
     width: 100%;
-    padding-top: 2vh;
-    height: 4vh;
+    padding-top: 3vh;
+    height: 6vh;
     text-align: center;
     word-spacing: 1.5rem;
-    background-color: var(--clr-background-nav);
+    background-color: var(--clr-background-bar);
 }
 
 #nav-bar li {
     list-style-type: none;
-    font-size: var(--font-size-h4);
+    color: black;
+    font-size: var(--font-size-h2);
 }
 
 #nav-bar ul {
-    width: 50;
+    display: block;
 }
 
 #nav-bar a {
@@ -70,166 +72,210 @@ p {
 }
 
 a:hover {
-    color: black;
+    color: white;
 }
 
 
-/* Nav-bar slutt 
+/* First Hero - Front page*/
 
-
-
-
-
-
-
- Hero1 start */
-
-#hero1-container {
-    height: 80vh;
-}
-
-#hero1-img {
-    margin-left: 25vw;
-    margin-right: 25vw;
-    margin-top: 12vh;
+#front-page {
     width: auto;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-}
-
-#hero1-txt {
-    margin-left: 32.5vw;
-    margin-right: 32.5vw;
-    height: 20vh;
-    text-align: center;
-}
-
-
-/* Hero1 slutt 
-
-
-
-
-
-
-
-
- Hero 2 start*/
-
-#hero2-container {
-    height: 100vh;
-}
-
-#our-problem {
-    padding-left: 25%;
-    padding-right: 25%;
-    width: auto;
-    height: 20vh;
-    text-align: center;
-    background-color: var(--clr-background-seperation);
-    padding-top: 6vh;
-}
-
-#our-problem-infocontainers {
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-}
-
-#our-problem1-inforcontainer1 {
-    margin-left: 22.5%;
-    margin-right: 2.5%;
-    height: 60vh;
-    width: 50%;
+    margin: 0 10% 0 10%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-}
-
-#our-problem1-inforcontainer1-1 {
-    height: 45%;
-    width: auto;
-    text-align: center;
-}
-
-#our-problem1-inforcontainer1-2 {
-    margin-top: 10%;
-    height: 45%;
-    width: auto;
-}
-
-#our-problem1-inforcontainer1-2 img {
-    width: 100%;
-    height: auto;
-}
-
-#our-problem1-inforcontainer2 {
-    height: 60vh;
-    width: 50%;
-    margin-right: 22.5%;
-    margin-left: 2.5%;
-}
-
-#our-problem1-inforcontainer2-1 {
-    height: 45%;
-    width: auto;
-}
-
-#our-problem1-inforcontainer2-1 img {
-    width: 100%;
-    height: auto;
-}
-
-#our-problem1-inforcontainer2-2 {
-    margin-top: 10%;
-    height: 45%;
-    width: auto;
-}
-
-
-/* Hero 2 slutt 
-
-
-
-
-
-
-
-
-  Hero 3 start */
-
-#hero3-container {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: auto;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.hero3-container {
-    margin-top: 5%;
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: row;
-}
-
-.hero3-container-logo {
-    width: 25%;
-    height: auto;
-    margin: 2.5% 5% 2.5% 5%;
-    /* src: https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional*/
-    display: flex;
-    justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
-.hero3-container-logo img {
-    min-width: 100%;
-    min-height: 100%;
+#front-page-img {
+    margin: 10% 0 0 0;
+    height: 40%;
+}
+
+#front-page-txt {
+    height: 20%;
+    text-align: center;
+    width: 50%;
+}
+
+
+/* 
+Front page image
+*/
+
+#front-page-img img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*
+Front page txt
+*/
+
+#front-page-txt p {
+    font-size: 2rem;
+    line-height: 2.75rem;
+}
+
+#front-page-txt h1 {
+    font-size: 3rem;
+}
+
+
+/*
+Seperation div - Title for new heros - Title for new 
+*/
+
+.seperation-div-tittle {
+    height: 25vh;
+    background-color: var(--clr-background-bar);
+    text-align: center;
+}
+
+.seperation-div-tittle h1 {
+    text-transform: uppercase;
+    padding-top: 2.5%;
+    font-style: italic;
+}
+
+.seperation-div-tittle p {
+    font-size: 2rem;
+    line-height: 2.75rem;
+}
+
+.seperation-div-tittle-size {
+    width: auto;
+    margin: 0 10% 0 10%;
+}
+
+
+/* 
+Second page - Second her
+*/
+
+#second-page {
+    height: 75vh;
+    margin: 0 10% 0 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+#img-txt-combo {
+    width: 47.5%;
+    margin-right: 2.5%;
+    height: 90%;
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#txt {
+    /*
+    Consideration to scaling 10% works fine until 1200px
+    */
+    padding-top: 10%;
+    width: 100%;
+    height: 50%;
+}
+
+#img {
+    height: 50%;
+    width: 100%;
+}
+
+#img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#txt-only {
+    width: 47.5%;
+    height: 90%;
+    margin: 3% 0 0 5%;
+    padding-top: 7%;
+}
+
+
+/* 
+Third page - Third hero
+*/
+
+#third-page {
+    height: 100vh;
+    width: auto;
+    margin: 0 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#first-row {
+    margin: 5% 0 3% 0;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#second-row {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    height: 80%;
+    width: 25%;
+    margin: 2.5% 4% 2.5% 4%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* 
+fourt page - fourth hero
+*/
+
+#fourth-page {
+    height: 75vh;
+    width: auto;
+    margin: 0 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-row {
+    width: 100%;
+    height: 50%;
+    margin: 2% 0 1.25% 0;
+    display: flex;
+    justify-content: row;
+}
+
+.fourth-img-box {
+    width: 30%;
+    margin: 0 2.5% 0 0;
+    height: 100%;
+}
+
+.fourth-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fourth-txt-box {
+    width: 67.5%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 1200px) {}
