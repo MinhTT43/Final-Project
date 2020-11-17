@@ -13,6 +13,7 @@
     --line-height: 1.7em;
 }
 
+
 /*How to use var color: 
 background: var(--clr-primary);
 */
@@ -40,6 +41,7 @@ p {
     line-height: 1.75rem;
     word-spacing: 0.5rem;
 }
+
 
 /* Code snip for 
 navbar */
@@ -74,6 +76,7 @@ navbar */
     animation-duration: 2000ms;
 }
 
+
 /* First Hero - Front page*/
 
 #front-page {
@@ -97,6 +100,7 @@ navbar */
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
 }
 
+
 /* 
 Front page image
 */
@@ -108,6 +112,7 @@ Front page image
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /*
 Front page txt
@@ -122,6 +127,7 @@ Front page txt
     font-size: 3rem;
 }
 
+
 /*
 Seperation div - Title for new heros - Title for new 
 */
@@ -133,7 +139,8 @@ Seperation div - Title for new heros - Title for new
     background-color: var(--clr-background-bar);
     text-align: center;
     color: white;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404)}
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+}
 
 .seperation-div-tittle h1 {
     text-transform: uppercase;
@@ -150,6 +157,7 @@ Seperation div - Title for new heros - Title for new
     width: 80%;
     padding: 5% 25% 5% 25%;
 }
+
 
 /* 
 Second page - Second her
@@ -181,45 +189,57 @@ Second page - Second her
     object-fit: cover;
 }
 
+
 /* 
 Third page - Third hero
 */
 
 #third-page {
-    height: 80vh;
+    height: 100vh;
     margin: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #first-row {
-    margin: 5% 0 3% 0;  
-    height: 40%;
-    width: 100%;
+    margin: 5% 0 2.5% 0;
+    height: 100%;
+    width: 90%;
     display: flex;
 }
 
 #second-row {
-    height: 40%;
-    width: 100%;
+    margin: 0 0 5% 0;
+    height: 100%;
+    width: 90%;
     display: flex;
 }
 
 .box {
-    width: 400px;
-    margin: 1%;
-    padding:2%;
+    border-radius: 10px;
+    width: 35%;
+    margin: 0 1% 3% 1%;
+    padding: 2%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     text-align: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+    align-items: center;
 }
 
 .box img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit:cover;
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: cover;
 }
+
+.box p {
+    padding-top: 5%;
+    font-size: 1.5rem;
+}
+
 
 /* 
 fourt page - fourth hero
@@ -258,7 +278,203 @@ fourt page - fourth hero
 }
 
 @media only screen and (max-width: 1200px) {
+    /* 
+Third page - Third hero
+*/
+    #third-page {
+        height: 90vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    #first-row {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #second-row {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        border-radius: 10px;
+        width: 70%;
+        margin: 10% 1% 3% 1%;
+        padding: 2%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+    }
+    .box img {
+        max-width: 85%;
+        max-height: 85%;
+        object-fit: cover;
+    }
+    .box p {
+        padding-top: 5%;
+        font-size: 1.5rem;
+    }
+    /* 
+fourt page - fourth hero
+*/
+    .fourth-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5% 0 5% 0;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    /* 
+Navigation bar
+*/
+    #nav-bar a {
+        text-decoration: none;
+        color: white;
+        padding: 0px 15px 0px 15px;
+    }
+    #nav-bar li {
+        list-style-type: none;
+        color: black;
+        font-size: 1em;
+    }
+    /*
+Seperation div - Title for new heros - Title for new 
+*/
+    .seperation-div-tittle {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: var(--clr-background-bar);
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+    }
+    .seperation-div-tittle h1 {
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    .seperation-div-tittle p {
+        color: white;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+    .seperation-div-tittle-size {
+        width: 100%;
+        padding: 5% 1% 5% 1%;
+    }
+    /* 
+Second page - Second her
+*/
+    #second-page {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 10% 10% 10%;
+    }
+    #img-txt-combo {
+        align-items: center;
+        width: 100%;
+        margin: 3% 0;
+        flex-direction: column;
+    }
+    #txt {
+        /*
+    Consideration to scaling 10% works fine until 1200px
+    */
+        width: 100%;
+    }
+    #img img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    /* 
+Third page - Third hero
+*/
+    #third-page {
+        height: 180vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #first-row {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #second-row {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        border-radius: 10px;
+        width: 70%;
+        margin: 10% 1% 3% 1%;
+        padding: 2%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
+    }
+    .box img {
+        max-width: 85%;
+        max-height: 85%;
+        object-fit: cover;
+    }
+    .box p {
+        padding-top: 5%;
+        font-size: 1.5rem;
+    }
+    /* 
+fourth page - fourth hero
+*/
+    #fourth-page {
+        height: 110vh;
+        width: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .fourth-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .fourth-img-box {
+        width: 30%;
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .fourth-img-box img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .fourth-txt-box {
+        width: 90%;
+        height: 80%;
+    }
 }
