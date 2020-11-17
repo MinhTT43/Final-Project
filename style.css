@@ -3,9 +3,9 @@
     --clr-primary: #bb5a5a;
     --clr-secondary: #e79e85;
     --clr-primary-hover: #932432;
-    --clr-background-bar: lightblue;
+    --clr-background-bar: #433935;
     --border-radius: 0.5rem;
-    --font-size-p: 1.75rem;
+    --font-size-p: 1rem;
     --font-size-h1: 2.5rem;
     --font-size-h2: 2rem;
     --font-size-h3: 1.75rem;
@@ -13,13 +13,12 @@
     --line-height: 1.7em;
 }
 
-
 /*How to use var color: 
 background: var(--clr-primary);
 */
 
 body {
-    font-family: "Halvetica", sans-serif;
+    font-family: "georgia", sans-serif;
     background-color: white;
 }
 
@@ -38,19 +37,20 @@ h2 {
 
 p {
     font-size: var(--font-size-p);
-    line-height: 2.5rem;
+    line-height: 1.75rem;
     word-spacing: 0.5rem;
-    padding-top: 2%;
 }
-
 
 /* Code snip for 
 navbar */
 
 #nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     width: 100%;
-    padding-top: 3vh;
-    height: 6vh;
+    height: 3em;
     text-align: center;
     word-spacing: 1.5rem;
     background-color: var(--clr-background-bar);
@@ -59,45 +59,43 @@ navbar */
 #nav-bar li {
     list-style-type: none;
     color: black;
-    font-size: var(--font-size-h2);
-}
-
-#nav-bar ul {
-    display: block;
+    font-size: 1.25em;
 }
 
 #nav-bar a {
     text-decoration: none;
-    text-transform: uppercase;
-}
-
-a:hover {
     color: white;
+    padding: 0px 30px 0px 30px;
 }
 
+#nav-bar a:hover {
+    color: white;
+    text-decoration: underline;
+    animation-duration: 2000ms;
+}
 
 /* First Hero - Front page*/
 
 #front-page {
+    display: flex;
     width: auto;
     margin: 0 10% 0 10%;
-    height: 90vh;
-    display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
 }
 
 #front-page-img {
     margin: 10% 0 0 0;
-    height: 40%;
+    height: 50%;
 }
 
 #front-page-txt {
     height: 20%;
+    width: 60%;
     text-align: center;
-    width: 50%;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
 }
-
 
 /* 
 Front page image
@@ -110,7 +108,6 @@ Front page image
     margin-left: auto;
     margin-right: auto;
 }
-
 
 /*
 Front page txt
@@ -125,51 +122,49 @@ Front page txt
     font-size: 3rem;
 }
 
-
 /*
 Seperation div - Title for new heros - Title for new 
 */
 
 .seperation-div-tittle {
-    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-color: var(--clr-background-bar);
     text-align: center;
-}
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404)}
 
 .seperation-div-tittle h1 {
     text-transform: uppercase;
-    padding-top: 2.5%;
     font-style: italic;
 }
 
 .seperation-div-tittle p {
-    font-size: 2rem;
-    line-height: 2.75rem;
+    color: white;
+    font-size: 1.25rem;
+    line-height: 2rem;
 }
 
 .seperation-div-tittle-size {
-    width: auto;
-    margin: 0 10% 0 10%;
+    width: 80%;
+    padding: 5% 25% 5% 25%;
 }
-
 
 /* 
 Second page - Second her
 */
 
 #second-page {
-    height: 75vh;
-    margin: 0 10% 0 10%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    margin: 10% 10% 10% 10%;
 }
 
 #img-txt-combo {
-    width: 47.5%;
-    margin-right: 2.5%;
-    height: 90%;
+    align-items: center;
+    width: 48%;
     margin: 3% 0;
-    display: flex;
     flex-direction: column;
 }
 
@@ -177,70 +172,54 @@ Second page - Second her
     /*
     Consideration to scaling 10% works fine until 1200px
     */
-    padding-top: 10%;
-    width: 100%;
-    height: 50%;
-}
-
-#img {
-    height: 50%;
     width: 100%;
 }
 
 #img img {
-    max-width: 100%;
-    max-height: 100%;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }
-
-#txt-only {
-    width: 47.5%;
-    height: 90%;
-    margin: 3% 0 0 5%;
-    padding-top: 7%;
-}
-
 
 /* 
 Third page - Third hero
 */
 
 #third-page {
-    height: 100vh;
-    width: auto;
+    height: 80vh;
     margin: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
 }
 
 #first-row {
-    margin: 5% 0 3% 0;
+    margin: 5% 0 3% 0;  
     height: 40%;
     width: 100%;
     display: flex;
-    flex-direction: row;
 }
 
 #second-row {
     height: 40%;
     width: 100%;
     display: flex;
-    flex-direction: row;
 }
 
 .box {
-    height: 80%;
-    width: 25%;
-    margin: 2.5% 4% 2.5% 4%;
+    width: 400px;
+    margin: 1%;
+    padding:2%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
 }
 
 .box img {
     max-width: 100%;
     max-height: 100%;
+    object-fit:cover;
 }
-
 
 /* 
 fourt page - fourth hero
@@ -278,6 +257,8 @@ fourt page - fourth hero
     height: 100%;
 }
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+}
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+}
