@@ -13,13 +13,10 @@
     --font-line-height: 1.5;
 }
 
-
 /* ============================================================================================*/
-
 
 /*How to use var color: 
 background: var(--clr-primary);*/
-
 
 /* ============================================================================================*/
 
@@ -46,7 +43,6 @@ h2 {
 p {
     font-size: 14px;
 }
-
 
 /*========================================================================================== 
 =================================NAVIGATION BAR=============================================
@@ -86,7 +82,8 @@ nav {
     margin-right: 2.5%;
 }
 
-#nav-options ul {}
+#nav-options ul {
+}
 
 #nav-options a {
     text-decoration: none;
@@ -99,7 +96,6 @@ nav {
 #nav-options a:hover {
     color: #ff6584;
 }
-
 
 /*========================================================================================== 
 =================================Hero=============================================
@@ -190,7 +186,6 @@ nav {
     opacity: 70%;
 }
 
-
 /*========================================================================================== 
 =================================Seperation=============================================
 ========================================================================================== */
@@ -206,7 +201,8 @@ nav {
     color: white;
 }
 
-.seperation-background:first-of-type {}
+.seperation-background:first-of-type {
+}
 
 .seperation-txt-box {
     margin-left: 10%;
@@ -221,7 +217,6 @@ nav {
 .seperation-txt-box p {
     font-size: 1.5rem;
 }
-
 
 /*========================================================================================== 
 =================================Section 1=============================================
@@ -280,7 +275,6 @@ nav {
     padding-left: 1%;
 }
 
-
 /*========================================================================================== 
 =================================Section 2=============================================
 ========================================================================================== */
@@ -323,7 +317,6 @@ nav {
     width: 100%;
     object-fit: cover;
 }
-
 
 /*========================================================================================== 
 =================================Section 3=============================================
@@ -392,7 +385,6 @@ nav {
     transition: 0.3s;
 }
 
-
 /*========================================================================================== 
 =================================Section 3=============================================
 ========================================================================================== */
@@ -420,7 +412,7 @@ footer {
 }
 
 #sources a:hover {
-    color: #FF6584;
+    color: #ff6584;
 }
 
 #mail {
@@ -437,7 +429,7 @@ footer {
 }
 
 #mail a:hover {
-    color: #FF6584;
+    color: #ff6584;
 }
 
 #to-top {
@@ -454,9 +446,264 @@ footer {
 }
 
 #to-top a:hover {
-    color: #FF6584;
+    color: #ff6584;
 }
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    /*========================================================================================== 
+=================================NAVIGATION BAR=============================================
+========================================================================================== */
 
-@media only screen and (max-width: 800px) {}
+    nav {
+        height: 20vh;
+        flex-direction: inline;
+        height: 100px;
+        background-color: #ff6584;
+    }
+
+    #nav-img {
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav-img img {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    #nav-options {
+        width: 100%;
+        height: 100%;
+    }
+    #nav-options a {
+        font-size: 1.1em;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav-options li {
+        margin-right: 0px;
+        padding-right: 40px;
+        color: #ff6584;
+    }
+    #nav-options a {
+        text-decoration: none;
+        padding: 0;
+        color: #2f455d;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    #nav-options a:hover {
+        color: white;
+        padding-right: 10px;
+    }
+
+    /*========================================================================================== 
+    =================================Hero=============================================
+    ========================================================================================== */
+    #hero {
+        height: 500px;
+        width: 100%;
+        background-image: url(img/hero.svg);
+        background-repeat: no-repeat;
+        background-size: 0vh;
+        background-position-x: 100%;
+        background-position-y: 100%;
+        background-color: var(--clr-background-nav);
+    }
+
+    #hero-txt {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    #hero-placement {
+        width: 100%;
+        position: relative;
+        top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #hero-buttons {
+        width: 450px;
+        justify-content: center;
+    }
+
+    .hero-button-right {
+        margin: 0;
+        width: 150px;
+    }
+    #hero-button-left {
+        margin: 0;
+        width: 150px;
+    }
+    .hero-button-right a {
+        padding: 15px 10px 15px 10px;
+        border-radius: 2.5px;
+        background-color: #2f455d;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    /*========================================================================================== 
+=================================Seperation=============================================
+========================================================================================== */
+    .seperation-background {
+        width: 100%;
+        background-color: #2f455d;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        color: white;
+    }
+
+    .seperation-txt-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .seperation-txt-box p {
+        font-size: 1.2rem;
+    }
+
+    /*========================================================================================== 
+=================================Section 1=============================================
+========================================================================================== */
+    .section1 {
+        margin: 20px;
+        padding-left: auto;
+        padding-right: auto;
+        width: 100%;
+        display: inline-block;
+        align-content: center;
+    }
+    .section1-txt {
+        width: 90%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .what-does-it-mean-container {
+        height: 100%;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #what-does-it-mean-header {
+        padding-top: 80px;
+    }
+    .what-does-it-mean-container h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .section1-txt h1 {
+        font-size: 1.5rem;
+    }
+    .section1-img img {
+        width: 100%;
+        height: 300px;
+        max-width: none;
+        max-height: none;
+        object-fit: cover;
+    }
+
+    #section1-img-1 {
+        width: 100vw;
+    }
+    #section1-img-2 {
+        display: flex;
+        width: 0px;
+        height: 0px;
+    }
+
+    .section1-txt h1 {
+        font-size: 2rem;
+    }
+
+    #what-does-it-mean-container {
+        margin-bottom: 30px;
+    }
+    /*========================================================================================== 
+=================================Section 3=============================================
+========================================================================================== */
+    #section2-container {
+        padding: 5% 10% 0 10%;
+        height: 100%;
+        text-align: center;
+    }
+    #section2-txt h1 {
+        font-size: 2rem;
+        color: #ff6584;
+        padding-bottom: 20px;
+    }
+    #section2-txt p {
+        font-size: 1.25rem;
+        padding-bottom: 30px;
+    }
+    .section2-img img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .section2-align-elements h1 {
+        font-weight: 100;
+        color: #2f455d;
+        font-size: 1.5em;
+    }
+
+    .section2-align-elements {
+        flex-direction: column;
+        font-size: 1em;
+        margin-bottom: 40px;
+        font-weight: 100;
+        color: #2f455d;
+    }
+    /*========================================================================================== 
+=================================Section 3=============================================
+========================================================================================== */
+    #section3 {
+        height: 800px;
+        width: auto;
+        margin: 0 10% 0 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #section3-tittle-placement {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #section3-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section3-img {
+        width: 47.5%;
+        height: 100%;
+    }
+
+    #section3-txt {
+        height: 50%;
+    }
+    #section3-tittle {
+        width: 100%;
+        height: 7.5%;
+    }
+    #section3-txt h1 {
+        padding-bottom: 20px;
+    }
+    #section3-txt p {
+        font-size: 1.25em;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+}
