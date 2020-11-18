@@ -4,8 +4,16 @@
     --clr-secondary: #e79e85;
     --clr-primary-hover: #932432;
     --clr-background-nav: #e79e85;
+    --clr-background-seperation: lightblue;
     --border-radius: 0.5rem;
+    --font-size-p: 1 rem;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2 rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --line-height: 1.7em;
 }
+
 
 /*How to use var color: 
 background: var(--clr-primary);
@@ -22,19 +30,208 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: 30px;
+    font-size: var(--font-size-h2);
 }
 
 p {
-    font-size: 14px;
+    font-size: var(--font-size-p);
+    line-height: 1.75rem;
+    padding-top: 2%;
 }
 
-@media only screen and (max-width: 1200px) {
+
+/* Nav-bar start */
+
+#nav-bar {
+    width: 100%;
+    padding-top: 2vh;
+    height: 4vh;
+    text-align: center;
+    word-spacing: 1.5rem;
+    background-color: var(--clr-background-nav);
 }
 
-@media only screen and (max-width: 800px) {
+#nav-bar li {
+    list-style-type: none;
+    font-size: var(--font-size-h4);
 }
+
+#nav-bar ul {
+    width: 50;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: black;
+}
+
+
+/* Nav-bar slutt 
+
+
+
+
+
+
+
+ Hero1 start */
+
+#hero1-container {
+    height: 80vh;
+}
+
+#hero1-img {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 12vh;
+    width: auto;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+#hero1-txt {
+    margin-left: 32.5vw;
+    margin-right: 32.5vw;
+    height: 20vh;
+    text-align: center;
+}
+
+
+/* Hero1 slutt 
+
+
+
+
+
+
+
+
+ Hero 2 start*/
+
+#hero2-container {
+    height: 100vh;
+}
+
+#our-problem {
+    padding-left: 25%;
+    padding-right: 25%;
+    width: auto;
+    height: 20vh;
+    text-align: center;
+    background-color: var(--clr-background-seperation);
+    padding-top: 6vh;
+}
+
+#our-problem-infocontainers {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+#our-problem1-inforcontainer1 {
+    margin-left: 22.5%;
+    margin-right: 2.5%;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#our-problem1-inforcontainer1-1 {
+    height: 45%;
+    width: auto;
+    text-align: center;
+}
+
+#our-problem1-inforcontainer1-2 {
+    margin-top: 10%;
+    height: 45%;
+    width: auto;
+}
+
+#our-problem1-inforcontainer1-2 img {
+    width: 100%;
+    height: auto;
+}
+
+#our-problem1-inforcontainer2 {
+    height: 60vh;
+    width: 50%;
+    margin-right: 22.5%;
+    margin-left: 2.5%;
+}
+
+#our-problem1-inforcontainer2-1 {
+    height: 45%;
+    width: auto;
+}
+
+#our-problem1-inforcontainer2-1 img {
+    width: 100%;
+    height: auto;
+}
+
+#our-problem1-inforcontainer2-2 {
+    margin-top: 10%;
+    height: 45%;
+    width: auto;
+}
+
+
+/* Hero 2 slutt 
+
+
+
+
+
+
+
+
+  Hero 3 start */
+
+#hero3-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero3-container {
+    margin-top: 5%;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero3-container-logo {
+    width: 25%;
+    height: auto;
+    margin: 2.5% 5% 2.5% 5%;
+    /* src: https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero3-container-logo img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 800px) {}
