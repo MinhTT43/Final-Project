@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+    </style>
     <title>Horizon</title>
 </head>
 
 <body>
     <nav>
         <div id="nav-bar">
-            <li>
-                <ul>
-                    <a href="#">Home.</a>
-                    <a href="#">About.</a>
-                    <a href="#">Explore.</a>
-                    <a href="#">Contact.</a>
-                </ul>
-            </li>
+            <div id="logo"><img src="images/logo-sml.png" alt="" /></div>
+            <div id="buttons">
+                <li>
+                    <ul>
+                        <a href="#">Home.</a>
+                        <a href="#">About.</a>
+                        <a href="#">Explore.</a>
+                        <a href="#">Contact.</a>
+                    </ul>
+                </li>
+            </div>
         </div>
     </nav>
 
     <main>
         <!--Front page / First hero-->
-        <section id="front-page">
+        <section id="front-page #hero1">
             <div id="front-page-img">
                 <img src="images/Spectacles3PDP_Module5_DT_Spectacles3-Mineral.jpg" alt="" />
             </div>
@@ -37,114 +43,194 @@
         <!--page seperation part - this is our problem information -->
         <div class="seperation-div-tittle">
             <div class="seperation-div-tittle-size">
-                <h2>What is HORIZON</h2>
+                <h2>The challenge</h2>
                 <p>
-                    Horizon is a slim and technical specs with built in image recognition to help navigate around the world without the need for additional aid or support.
-                </p>
-            </div>
-        </div>
-        <!--page content-->
-        <section id="second-page">
-            <div id="img-txt-combo">
-                <div id="txt">
-                    <div id="img">
-                        <img src="images/andrew.jpg" alt="" />
-                    </div>
-                    <h1>Jason</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at dictum velit, faucibus pulvinar est. Vivamus faucibus, risus id laoreet elementum, tellus nibh dignissim nisi, vitae finibus purus turpis sit amet lectus. Lorem ipsum
+                    Globally there are at least 1 billion people that have near or distance vision impariment
+                    <a href="https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment">[3]</a
+                        >, affecting their ability to perform activites related
+                        to self-care or handle everyday life situations
+                        <a
+                            href="https://apps.who.int/iris/rest/bitstreams/1257940/retrieve"
+                            >[1]</a
+                        >.
                     </p>
                 </div>
             </div>
-            <div id="img-txt-combo">
-                <div id="txt">
-                    <div id="img">
-                        <img src="images/lauren.jpg" alt="" />
+            <!--page content-->
+            <section id="second-page">
+                <div id="img-txt-combo">
+                    <div id="txt">
+                        <div id="img">
+                            <img src="images/andrew.jpg" alt="" />
+                        </div>
+                        <h1>What does it mean?</h1>
+                        <p>
+                            Vision impairment can be defined as vision loss
+                            caused by low vision or blindness. And is not
+                            fixable by usual means, such as the use of glasses
+                            or contacts
+                            <a
+                                href="https://en.wikipedia.org/wiki/Visual_impairment"
+                                >[2]</a
+                            >. Challenges that visual impaired faces may vary,
+                            while it can vary from not being able to identifying
+                            foodlabels and other types of labes to the problems
+                            they might face while navigte through unkown areas
+                            without tactile paths
+                            <a
+                                href="http://www.moonliteracy.org.uk/problems-that-blind-and-visually-impaired-people-face-daily/"
+                                >[3]</a
+                            ><a
+                                href="https://www.cs.cmu.edu/~jbigham/pubs/pdfs/2013/visualchallenges.pdf"
+                                >[4]</a
+                            >. Living with this disability will therefore have a
+                            substantial negative impact on the quality of life
+
+                            <a
+                                href="https://www.researchgate.net/publication/6223782_Impact_of_Visual_Impairment_on_Quality_of_Life_A_Comparison_With_Quality_of_Life_in_the_General_Population_and_With_Other_Chronic_Conditions"
+                                >[5]</a
+                            >.
+                        </p>
                     </div>
-                    <h1>Lauren</h1>
+                </div>
+                <div id="img-txt-combo">
+                    <div id="txt">
+                        <div id="img">
+                            <img src="images/lauren.jpg" alt="" />
+                        </div>
+                        <h1>Why is it important?</h1>
+                        <p>
+                            <a
+                                href="https://www.un.org/sustainabledevelopment/health/"
+                                >Good health and well-being is UN's 3rd
+                                sustainable development goal</a
+                            >, and is the one who inspired us to develop this
+                            technology. Reason being, that the main problems of
+                            being visually impaired revolves around daily tasks,
+                            mobility, depression and anxiety
+                            <a
+                                href="https://www.researchgate.net/publication/6223782_Impact_of_Visual_Impairment_on_Quality_of_Life_A_Comparison_With_Quality_of_Life_in_the_General_Population_and_With_Other_Chronic_Conditions"
+                                >[5]</a
+                            >. Our goal is to make it easier to perform
+                            dailytasks, such as reading labels or busstables,
+                            and easier to travle from A to B by enhancing their
+                            vision and highlight the enviorment. Overall
+                            increasing their feeling of independency and reduce
+                            depression and anxiety.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--third page / third hero-->
+            <section id="third-page">
+                <div id="first-row">
+                    <div class="box">
+                        <img src="images/hero3/loved_ones.jpg" alt="" />
+                        <p>Watch over loved ones</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/hero3/go_anywhere1.jpg" alt="" />
+                        <p>Perfom daily tasks with ease</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/hero3/healthy_habits.jpg" alt="" />
+                        <p>Create healthy habits</p>
+                    </div>
+                </div>
+                <div id="second-row">
+                    <div class="box">
+                        <img src="images/hero3/office_work.jpg" alt="" />
+                        <p>Work at the office</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/hero3/studies.jpg" alt="" />
+                        <p>Start new studies</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/hero3/go_anywhere.jpg" alt="" />
+                        <p>Go anywhere you want</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- fourth page / fourth hero-->
+            <div class="seperation-div-tittle">
+                <div class="seperation-div-tittle-size">
+                    <h2>Who are we doing it for</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at dictum velit, faucibus pulvinar est. Vivamus faucibus, risus id laoreet elementum, tellus nibh dignissim nisi, vitae finibus purus turpis sit amet lectus. Lorem ipsum
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nam posuere mauris nisi. Phasellus tempus hendrerit sem
+                        sit amet commodo. Etiam. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit.
                     </p>
                 </div>
             </div>
-        </section>
+            <section id="fourth-page">
+                <div class="fourth-row">
+                    <div class="fourth-img-box">
+                        <img src="images/highlight_enviorment" alt="" />
+                    </div>
+                    <div class="fourth-txt-box">
+                        <div>
+                            <h1>Highlight enviorment</h1>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Maecenas at dictum velit,
+                                faucibus pulvinar est. Vivamus faucibus, risus
+                                id laoreet elementum, tellus nibh dignissim
+                                nisi, vitae finibus purus turpis sit amet
+                                lectus. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In mollis nisl est, ac maximus
+                                lectus venenatis pharetra. Fusce sodales
+                                elementum ipsum, quis interdum odio imperdiet
+                                rutrum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fourth-row">
+                    <div class="fourth-img-box">
+                        <img src="images/enhance_vision.png" alt="" />
+                    </div>
+                    <div class="fourth-txt-box">
+                        <div>
+                            <h1>Enhance vision</h1>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Maecenas at dictum velit,
+                                faucibus pulvinar est. Vivamus faucibus, risus
+                                id laoreet elementum, tellus nibh dignissim
+                                nisi, vitae finibus purus turpis sit amet
+                                lectus. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In mollis nisl est, ac maximus
+                                lectus venenatis pharetra. Fusce sodales
+                                elementum ipsum, quis interdum odio imperdiet
+                                rutrum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 
-        <!--third page / third hero-->
-        <section id="third-page">
-            <div id="first-row">
-                <div class="box">
-                    <img src="images/lauren.jpg" alt="" />
-                    <p>text</p>
-                </div>
-                <div class="box">
-                    <img src="images/lauren.jpg" alt="" />
-                    <p>text</p>
-                </div>
-                <div class="box">
-                    <img src="images/lauren.jpg" alt="" />
-                    <p>text</p>
-                </div>
+    <footer>
+        <div id="sources">
+            <a href="#">Source</a>
             </div>
-            <div id="second-row">
-                <div class="box">
-                    <img src="images/lauren.jpg" alt="" />
-                    <p>text</p>
-                </div>
-                <div class="box">
-                    <img src="images/lauren.jpg" alt="" />
-                    <p>text</p>
-                </div>
-                <div class="box">
-                    <img src="images/lauren.jpg" alt="" />
-                    <p>text</p>
-                </div>
-            </div>
-        </section>
 
-        <!-- fourth page / fourth hero-->
-        <div class="seperation-div-tittle">
-            <div class="seperation-div-tittle-size">
-                <h2>Who are we doing it for</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere mauris nisi. Phasellus tempus hendrerit sem sit amet commodo. Etiam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+            <div id="contact">
+                <a href="mailto:horerisin@horizon.com">horerisin@horizon.com</a>
             </div>
-        </div>
-        <section id="fourth-page">
-            <div class="fourth-row">
-                <div class="fourth-img-box">
-                    <img src="images/highlight_enviorment_visual" alt="" />
-                </div>
-                <div class="fourth-txt-box">
-                    <div>
-                        <h1>Highlight enviorment</h1>
-                    </div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at dictum velit, faucibus pulvinar est. Vivamus faucibus, risus id laoreet elementum, tellus nibh dignissim nisi, vitae finibus purus turpis sit amet lectus. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. In mollis nisl est, ac maximus lectus venenatis pharetra. Fusce sodales elementum ipsum, quis interdum odio imperdiet rutrum.
-                        </p>
-                    </div>
-                </div>
+
+            <div id="to-top">
+                <a href="#top"><img src="images/go-to-the-top-hand-drawn-interface-symbol-with-an-arrow-pointing-up-to-a-thin-rectangle.svg" alt="" /></a>
             </div>
-            <div class="fourth-row">
-                <div class="fourth-img-box">
-                    <img src="images/enhance_vision.png" alt="" />
-                </div>
-                <div class="fourth-txt-box">
-                    <div>
-                        <h1>Enhance vision</h1>
-                    </div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at dictum velit, faucibus pulvinar est. Vivamus faucibus, risus id laoreet elementum, tellus nibh dignissim nisi, vitae finibus purus turpis sit amet lectus. Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit. In mollis nisl est, ac maximus lectus venenatis pharetra. Fusce sodales elementum ipsum, quis interdum odio imperdiet rutrum.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+            </footer>
 
 </html>

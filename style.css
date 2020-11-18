@@ -3,7 +3,8 @@
     --clr-primary: #bb5a5a;
     --clr-secondary: #e79e85;
     --clr-primary-hover: #932432;
-    --clr-background-bar: #433935;
+    --clr-background-bar: #acb1b4;
+    --clr-background-footer: #acb1b4;
     --border-radius: 0.5rem;
     --font-size-p: 1rem;
     --font-size-h1: 2.5rem;
@@ -19,7 +20,7 @@ background: var(--clr-primary);
 */
 
 body {
-    font-family: "Arial", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     background-color: white;
 }
 
@@ -39,35 +40,30 @@ h2 {
 p {
     font-size: var(--font-size-p);
     line-height: 1.75rem;
-    word-spacing: 0.5rem;
+    word-spacing: 0.4rem;
 }
 
 
 /* ==================================navbar================================== */
 
+nav {}
+
 #nav-bar {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    flex-direction: row;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 3.5em;
+    height: 4.5em;
     text-align: center;
     word-spacing: 1.5rem;
     background-color: var(--clr-background-bar);
 }
 
-#nav-bar li {
-    list-style-type: none;
-    color: black;
-    font-size: 1.25em;
-}
-
 #nav-bar a {
+    font-size: 1.75rem;
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 0px 30px 0px 30px;
 }
 
@@ -75,6 +71,34 @@ p {
     color: white;
     text-decoration: underline;
     animation-duration: 2000ms;
+}
+
+#logo {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#buttons li {
+    list-style-type: none;
+    color: black;
+    font-size: 1.25em;
+    width: 100%;
+    text-align: right;
 }
 
 
@@ -139,8 +163,8 @@ p {
     align-content: center;
     background-color: var(--clr-background-bar);
     text-align: center;
-    color: white;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+    color: black;
+    /*text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);*/
 }
 
 .seperation-div-tittle h1 {
@@ -149,8 +173,8 @@ p {
 }
 
 .seperation-div-tittle p {
-    color: white;
-    font-size: 1.25rem;
+    color: black;
+    font-size: 1rem;
     line-height: 2rem;
 }
 
@@ -193,7 +217,7 @@ p {
 */
 
 #third-page {
-    height: 80vh;
+    height: 100vh;
     margin: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
@@ -221,10 +245,10 @@ p {
     padding: 2%;
     height: 70%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    text-align: center;
+    align-items: left;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.664);
-    align-items: center;
 }
 
 .box img {
@@ -244,7 +268,7 @@ p {
 */
 
 #fourth-page {
-    height: 75vh;
+    height: 85vh;
     width: auto;
     margin: 0 10% 0 10%;
     display: flex;
@@ -282,6 +306,56 @@ p {
 
 .fourth-txt-box div {
     margin: 1% 0 1% 0;
+}
+
+
+/* ================================== Footer==================================*/
+
+footer {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--clr-background-footer);
+}
+
+#sources {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+    animation-duration: 2000ms;
+}
+
+#contact {
+    width: 81.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+#to-top {
+    width: 3.5%;
+    height: 100%;
+}
+
+#to-top img {
+    max-width: 100%;
+    max-height: 90%;
 }
 
 
@@ -340,10 +414,14 @@ p {
 ==================================fourt page - fourth hero==================================
 */
     .fourth-row {
+        height: 120%;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 5% 0 5% 0;
+    }
+    #fourth-page {
+        height: 150vh;
     }
 }
 
