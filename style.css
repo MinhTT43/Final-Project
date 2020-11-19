@@ -125,7 +125,6 @@ nav {
 
 #hero-placement {
     width: 60%;
-    height: 220px;
     position: relative;
     left: 15;
     top: 32.5%;
@@ -136,7 +135,7 @@ nav {
 }
 
 #hero-txt {
-    width: 450px;
+    width: 600px;
     height: 100%;
 }
 
@@ -145,7 +144,8 @@ nav {
 }
 
 #hero-buttons {
-    width: 450px;
+    width: 600px;
+    height: 90px;
     display: flex;
     flex-direction: row;
 }
@@ -522,7 +522,6 @@ footer {
     }
     #hero-placement {
         width: 50%;
-        height: 220px;
     }
     #hero-txt {
         width: 300px;
@@ -532,7 +531,6 @@ footer {
     }
     #hero-buttons {
         width: 300px;
-        height: auto;
     }
     .hero-button-left {
         width: 45%;
@@ -665,6 +663,7 @@ footer {
     }
     .hero-buttons {
         width: 450px;
+        height: 100px;
         justify-content: center;
     }
     .hero-button-right {
