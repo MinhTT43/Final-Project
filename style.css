@@ -200,7 +200,7 @@ nav {
 .seperation-background {
     width: auto;
     background-color: #2f455d;
-    height: 200px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,7 +236,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5% 0 5% 0;
+    margin: 10% 0 10% 0;
 }
 
 .what-does-it-mean-container h1 {
@@ -264,7 +264,6 @@ nav {
 
 .section1-txt {
     width: 80%;
-    padding-right: 1%;
 }
 
 .section1-txt p {
@@ -298,7 +297,7 @@ nav {
 ========================================================================================== */
 
 #section2-container {
-    padding: 5% 10% 0 10%;
+    padding: 5% 10% 5% 10%;
     height: 100%;
 }
 
@@ -326,7 +325,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
 }
 
 .section2-stats-container {
@@ -559,7 +557,7 @@ footer {
         flex-direction: column;
     }
     .section1-txt {
-        width: 90%;
+        width: 100%;
         margin-bottom: 5%;
         text-align: center;
     }
@@ -573,7 +571,7 @@ footer {
 =================================Section 2=============================================
 ========================================================================================== */
     #section2-container {
-        padding: 5% 1% 0 1%;
+        padding: 5% 1% 5% 1%;
         height: 100%;
     }
     /*========================================================================================== 
@@ -753,7 +751,7 @@ footer {
 =================================Section 2=============================================
 ========================================================================================== */
     #section2-container {
-        padding: 5% 10% 0 10%;
+        padding: 5% 10% 5% 10%;
         height: 100%;
         text-align: center;
     }
