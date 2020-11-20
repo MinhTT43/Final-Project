@@ -20,13 +20,10 @@
     --font-color-tittle: #ff6584;
 }
 
-
 /* ============================================================================================*/
-
 
 /*How to use var color: 
 background: var(--clr-primary);*/
-
 
 /* ============================================================================================*/
 
@@ -56,7 +53,6 @@ h2 {
 p {
     font-size: var(--font-size-p);
 }
-
 
 /*========================================================================================== 
 =================================NAVIGATION BAR=============================================
@@ -109,7 +105,6 @@ nav {
     color: #ff6584;
 }
 
-
 /*========================================================================================== 
 =================================Hero=============================================
 ========================================================================================== */
@@ -133,10 +128,9 @@ nav {
 }
 
 #hero-placement {
-    width: 600px;
+    width: 500px;
     position: relative;
-    left: 15;
-    top: 32.5%;
+    top: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +138,7 @@ nav {
 }
 
 #hero-txt {
-    width: 30em;
+    width: 500px;
     height: 100%;
 }
 
@@ -152,36 +146,29 @@ nav {
     font-size: 2.5rem;
 }
 
-#hero-buttons {
-    width: 30em;
-    height: 90px;
+#hero-button-container {
     display: flex;
-    justify-content: left;
+    width: 100%;
 }
 
 .hero-button {
-    width: 116px;
-    height: 50px;
-    display: flex;
-    border-radius: 2.5px;
-}
-
-.hero-button:last-child {
-    margin: 0 0 0 40px;
+    width: 120px;
+    border: solid #2f455d;
+    color: #2f455d;
+    margin-right: 20px;
+    border-radius: 4px;
 }
 
 .hero-button a {
-    font-size: 1rem;
-    text-decoration: none;
-    border: solid #2f455d;
-    padding: 15px 10px 15px 10px;
-    color: #2f455d;
-    font-weight: bold;
-    transition: 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2.5px;
+    height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    
 }
 
 .hero-button:last-of-type {
@@ -192,29 +179,20 @@ nav {
     opacity: 70%;
 }
 
-
 /*========================================================================================== 
 =================================Seperation=============================================
 ========================================================================================== */
 
 .seperation-background {
-    width: auto;
-    background-color: var(--clr-background-button);
-    height: 250px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: left;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 250px;
     color: white;
+    background-color: var(--clr-background-button);
     padding: 0 1% 0 1%;
-}
-
-.seperation-txt-box h1 {
-    font-size: var(--font-size-h1);
-}
-
-.seperation-txt-box p {
-    font-size: var(--font-size-p);
 }
 
 .seperation-txt-box a {
@@ -225,7 +203,6 @@ nav {
 .seperation-txt-box a:hover {
     color: var(--clr-primary-hover);
 }
-
 
 /*========================================================================================== 
 =================================Section 1=============================================
@@ -283,7 +260,6 @@ nav {
     margin: 20px 1% 50px 1%;
 }
 
-
 /*========================================================================================== 
 =================================Section 2=============================================
 ========================================================================================== */
@@ -304,12 +280,10 @@ nav {
 
 #section2-txt p {
     font-size: var(--font-size-p);
-    margin: 0px 1% 0px 1%;
 }
 
 #section2-txt h1 {
     color: var(--font-color-tittle);
-    margin: 0px 20px 0px 20px;
 }
 
 .section2-main-container {
@@ -325,7 +299,6 @@ nav {
     text-align: center;
     color: var(--font-color-tittle);
     width: 250px;
-    padding: 20px;
 }
 
 .section2-align-elements {
@@ -342,7 +315,6 @@ nav {
     font-size: var(--font-size-p);
 }
 
-
 /*========================================================================================== 
 =================================Section 3=============================================
 ========================================================================================== */
@@ -350,7 +322,6 @@ nav {
 #section3 {
     height: 100%;
     width: auto;
-    margin: 0 1% 0 1%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -374,10 +345,9 @@ nav {
 }
 
 #section3-img {
-    width: 100%;
-    height: 400px;
     display: flex;
-    flex-direction: row;
+    height: 100%;
+    object-fit: cover;
 }
 
 .section3-img {
@@ -413,7 +383,6 @@ nav {
     color: white;
     transition: 0.3s;
 }
-
 
 /*========================================================================================== 
 =================================Footer=============================================
