@@ -1,9 +1,10 @@
 :root {
     --clr-primary: #bb5a5a;
     --clr-secondary: #e79e85;
-    --clr-primary-hover: #932432;
+    --clr-primary-hover: #ff6584;
     --clr-body: white;
-    --clr-background-nav: #e7e7e7;
+    --clr-background-nav: antiquewhite;
+    --clr-background-button: #2f455d;
     --border-radius: 0.5rem;
     /*================================================Font======================================= */
     --font-size-p: 1.25rem;
@@ -15,12 +16,17 @@
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
     --font-size-h5: 1.25rem;
+    --font-color: #2f455d;
+    --font-color-tittle: #ff6584;
 }
+
 
 /* ============================================================================================*/
 
+
 /*How to use var color: 
 background: var(--clr-primary);*/
+
 
 /* ============================================================================================*/
 
@@ -31,22 +37,30 @@ body {
     line-height: var(--font-line-height);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: 30px;
+    font-size: var(--font-size-h2);
 }
 
 p {
-    font-size: 14px;
+    font-size: var(--font-size-p);
 }
+
 
 /*========================================================================================== 
 =================================NAVIGATION BAR=============================================
@@ -55,7 +69,6 @@ p {
 nav {
     height: 100px;
     display: flex;
-    flex-direction: row;
     background-color: var(--clr-background-nav);
 }
 
@@ -91,38 +104,44 @@ nav {
     text-decoration: none;
     font-size: var(--font-size-h1);
     padding: 0 2.5% 0 2.5%;
-    color: #2f455d;
+    color: var(--font);
     transition: 0.3s;
 }
 
 #nav-options a:hover {
-    color: #ff6584;
+    color: var(--clr-primary-hover);
 }
+
 
 /*========================================================================================== 
 =================================Hero=============================================
 ========================================================================================== */
 
-#hero {
-    height: 97.5vh;
-    width: 100%;
-    background-image: url(img/hero.svg);
-    background-repeat: no-repeat;
-    background-size: 110vh;
-    background-position-x: 60%;
-    background-position-y: 3%;
+#hero-section {
     background-color: var(--clr-background-nav);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+}
+
+#hero {
+    height: 90%;
+    width: 1200px;
 }
 
 #hero-txt a {
-    color: #ff6584;
+    color: var(--clr-primary-hover);
 }
 
 #hero-placement {
-    width: 60%;
-    position: relative;
-    left: 15;
-    top: 32.5%;
+    width: 600px;
+    position: absolute;
+    top: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +149,7 @@ nav {
 }
 
 #hero-txt {
-    width: 600px;
+    width: 30em;
     height: 100%;
 }
 
@@ -139,66 +158,54 @@ nav {
 }
 
 #hero-buttons {
-    width: 600px;
-    height: 90px;
+    width: 30em;
+    height: 5em;
     display: flex;
-    flex-direction: row;
+    justify-content: left;
 }
 
-.hero-button-right {
-    margin: 5% 0 2.5% 0;
+.hero-button {
+    width: 120px;
+    height: 50px;
     display: flex;
+    border-radius: 2.5px;
+    margin-top: 10px;
 }
 
-.hero-button-right a {
+.hero-button:last-child {
+    margin: 10px 0 0 10px;
+}
+
+.hero-button a {
     font-size: 1rem;
     text-decoration: none;
     border: solid #2f455d;
     padding: 15px 10px 15px 10px;
-    border-radius: 2.5px;
-    background-color: #2f455d;
-    color: white;
+    color: var(--font-color);
     font-weight: bold;
     transition: 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hero-button-left {
-    width: 30%;
-    margin: 5% 0 2.5% 0;
-    display: flex;
-}
-
-.hero-button-left a {
-    font-size: 1rem;
-    text-decoration: none;
-    border: solid #2f455d;
-    padding: 15px 10px 15px 10px;
     border-radius: 2.5px;
-    color: #2f455d;
-    font-weight: bold;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.hero-button-left a:hover {
+.hero-button:last-of-type {
+    background-color: var(--clr-background-button);
+    border: none;
+}
+
+.hero-button a:hover {
     opacity: 70%;
 }
 
-.hero-button-right a:hover {
-    opacity: 70%;
-}
 
 /*========================================================================================== 
 =================================Seperation=============================================
 ========================================================================================== */
 
 .seperation-background {
-    width: auto;
+    width: 100%;
     background-color: #2f455d;
     height: 250px;
     display: flex;
@@ -206,7 +213,10 @@ nav {
     align-items: center;
     text-align: left;
     color: white;
-    padding: 0 10% 0 10%;
+}
+
+.seperation-txt-box {
+    max-width: 1200px;
 }
 
 .seperation-txt-box h1 {
@@ -226,6 +236,7 @@ nav {
     color: #ff6584;
 }
 
+
 /*========================================================================================== 
 =================================Section 1=============================================
 ========================================================================================== */
@@ -236,7 +247,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10% 0 10% 0;
+    max-width: 1200px;
 }
 
 .what-does-it-mean-container h1 {
@@ -253,17 +264,8 @@ nav {
     color: #ff6584;
 }
 
-.section1 {
-    margin-top: 2.5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-}
-
 .section1-txt {
-    width: 80%;
+    width: 100%;
 }
 
 .section1-txt p {
@@ -276,7 +278,7 @@ nav {
 }
 
 .section1-img {
-    width: 40%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -284,20 +286,17 @@ nav {
 }
 
 .section1-img img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 600px;
+    max-height: 50%;
 }
 
-.section1-txt:last-of-type {
-    padding-left: 1%;
-}
 
 /*========================================================================================== 
 =================================Section 2=============================================
 ========================================================================================== */
 
 #section2-container {
-    padding: 5% 10% 5% 10%;
+    max-width: 1200px;
     height: 100%;
 }
 
@@ -318,7 +317,6 @@ nav {
 #section2-txt h1 {
     color: #ff6584;
     margin: 0px 20px 0px 20px;
-
 }
 
 .section2-main-container {
@@ -351,13 +349,14 @@ nav {
     font-size: var(--font-size-p);
 }
 
+
 /*========================================================================================== 
 =================================Section 3=============================================
 ========================================================================================== */
 
 #section3 {
     height: 100%;
-    width: auto;
+    max-width: 1200px;
     margin: 0 10% 0 10%;
     display: flex;
     justify-content: center;
@@ -421,6 +420,7 @@ nav {
     color: white;
     transition: 0.3s;
 }
+
 
 /*========================================================================================== 
 =================================Footer=============================================
