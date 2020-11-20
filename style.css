@@ -296,7 +296,6 @@ nav {
 ========================================================================================== */
 
 #section2-container {
-    max-width: 1200px;
     height: 100%;
 }
 
@@ -356,7 +355,7 @@ nav {
 
 #section3 {
     height: 100%;
-    max-width: 1200px;
+    width: auto;
     margin: 0 10% 0 10%;
     display: flex;
     justify-content: center;
@@ -512,7 +511,8 @@ footer {
         width: 100%;
     }
     #hero-placement {
-        width: 50%;
+        width: 35%;
+        top: 15%;
     }
     #hero-txt {
         width: 300px;
