@@ -60,7 +60,7 @@ p {
 Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 .center-container {
-    max-width: 1440px;
+    max-width: 1200px;
     text-align: left;
     margin: 0px auto;
     display: flex;
@@ -155,7 +155,7 @@ nav {
     flex-direction: column;
     position: absolute;
     top: 40%;
-    left: 15%;
+    margin-left: 20px;
 }
 
 #hero-txt {
@@ -227,6 +227,10 @@ nav {
     padding: 0.25rem 9999rem;
 }
 
+.seperation-txt-box{
+    width: 800px;
+}
+
 .seperation-txt-box h1 {
     font-size: var(--font-size-h1);
 }
@@ -256,7 +260,7 @@ nav {
 #section1-heading {
     margin: 50px 0 50px 0;
     justify-content: center;
-    margin: 20px;
+    margin: 200px 20px 0 20px;
 }
 
 #section1-heading h1 {
