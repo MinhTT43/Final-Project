@@ -229,8 +229,10 @@ nav {
     align-items: center;
     text-align: left;
     color: white;
-    margin-top: 5em;
     padding: 0 1% 0 1%;
+    margin: 0 -9999rem;
+    /* add back section padding value */
+    padding: 0.25rem 9999rem;
 }
 
 .seperation-txt-box h1 {
