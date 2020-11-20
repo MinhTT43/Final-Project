@@ -1,14 +1,14 @@
 :root {
     /* Variabler */
     --clr-primary: #ff6584;
-    --clr-secondary: #2f455d;
+    --clr-secondary: #0e1e31;
     --clr-primary-hover: #932432;
     --clr-background-nav: #e7e7e7;
     --clr-background-seperation: lightblue;
     --border-radius: 0.5rem;
-    --font-size-p: 1 rem;
+    --font-size-p: 1rem;
     --font-size-h1: 2.5rem;
-    --font-size-h2: 2 rem;
+    --font-size-h2: 2rem;
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
     --line-height: 1.7em;
@@ -18,12 +18,15 @@
 background: var(--clr-primary);
 */
 
+html,
 body {
     font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
     background-color: white;
-    max-width: 1200px;
     margin: 0 auto;
     float: none;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 * {
@@ -45,13 +48,27 @@ p {
     padding-top: 2%;
 }
 
-/* Section A */
-.container {
-    margin: 8rem 0rem 0rem 0rem;
+/*  =================Container for max width================
+
+Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
+
+.center-container {
+    width: 1440px;
+    text-align: left;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+/* =============Section A============= */
+.container-a {
+    margin: 8rem 2rem 2rem 2rem;
     color: black;
 }
 
-.heading {
+.heading-a {
     font-size: var(--font-size-h1);
     color: var(--clr-primary);
     text-align: center;
@@ -64,9 +81,7 @@ p {
 }
 
 .tech-explainer {
-    /* flex-basis: 300px; */
-    margin: 2rem;
-    width: 700px;
+    margin: 2rem 2rem 2rem 2rem;
 }
 
 .tech-explainer .tech-img {
@@ -97,15 +112,41 @@ p {
     padding-top: 2%;
 }
 
-/* Section A END */
+/* ===============Section A END=========== */
 
-/* Section B */
+/* ==============Section B============== */
 
 .section-b {
-    margin-top: 4rem;
+    max-width: 100%;
+    background-color: var(--clr-background-seperation);
+    position: relative;
+    margin: 0 -9999rem;
+    /* add back section padding value */
+    padding: 0.25rem 9999rem;
 }
 
 .container-b {
+    text-align: center;
+    margin: 4rem;
+    color: black;
+}
+
+.section-b h1 {
+    font-size: 2rem;
+}
+
+.section-b p {
+}
+
+/* ===========Section B END=========== */
+
+/* =========Section C=============== */
+
+.section-c {
+    margin-top: 4rem;
+}
+
+.container-c {
     margin: 0rem 0rem 14rem 0rem;
     color: black;
 }
@@ -114,12 +155,12 @@ p {
     display: flex;
     justify-content: space-around;
     margin: 0rem;
+    align-items: center;
 }
 
 .tracking-explainer {
-    /* flex-basis: 300px; */
     margin: 2rem 2rem 0rem 2rem;
-    width: 700px;
+    width: 400px;
 }
 
 .tracking-explainer .tracking-img {
@@ -131,74 +172,55 @@ p {
     font-size: var(--font-size-h3);
     margin: 1rem 1rem;
     font-weight: 100;
-    /* letter-spacing: 3px; */
     color: black;
     text-align: center;
 }
 
-.container-b p {
-    font-size: var(--font-size-h4);
+.container-c p {
+    font-size: 1.2rem; /* Needs larger than p */
+    font-weight: 100;
     margin: 0rem 4rem 4rem 4rem;
-    /* font-weight: 100; */
-    /* letter-spacing: 3px; */
     color: black;
     text-align: center;
 }
 
-.section-c {
-    text-align: center;
-    margin: 4rem 0rem 4rem 0rem;
-    padding: 2rem;
-    /* width: 100%; */
-    background-color: var(--clr-background-seperation);
-    /* box-shadow: 0px 0px 20px lightgray; */
-    border-radius: 0.5rem;
-}
+/* Section C END */
 
-.section-c h1 {
-    font-size: 2rem;
-    color: black;
-}
-
-.section-c p {
-    margin: 0rem 2rem 2rem 2rem;
-    color: black;
-}
-
-/* Section B END */
-
-@media only screen and (max-width: 1200px) {
-    .tech-wrapper {
-        flex-direction: column;
+@media only screen and (max-width: 1440px) {
+    .tech-explainer {
+        width: auto;
     }
 
-    .tech-explainer {
+    .tracking-explainer {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .center-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: auto;
+    }
+
+    .tech-wrapper {
+        flex-direction: column;
         width: auto;
     }
 
     .tracking-wrapper {
         flex-direction: column;
+        width: auto;
+    }
+    .tech-explainer {
+        width: auto;
     }
 
     .tracking-explainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: auto;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .tech-explainer {
-        width: auto;
-        margin: 1rem 0.5rem;
-    }
-
-    .tracking-explainer {
-        width: auto;
-        margin: 1rem 0.5rem;
-    }
 }
