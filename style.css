@@ -3,7 +3,7 @@
     --clr-secondary: #e79e85;
     --clr-primary-hover: #ff6584;
     --clr-body: white;
-    --clr-background-nav: white;
+    --clr-background-nav: antiquewhite;
     --clr-background-button: #2f455d;
     --border-radius: 0.5rem;
     /*================================================Font======================================= */
@@ -35,9 +35,10 @@ body {
     line-height: var(--font-line-height);
     background-color: var(--clr-body);
     color: var(--font-color);
-    max-width: 1200px;
     margin: 0 auto;
     float: none;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 * {
@@ -58,14 +59,34 @@ p {
 }
 
 
+/*  =================Container for max width================
+
+Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
+
+.center-container {
+    max-width: 1440px;
+    text-align: left;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+
 /*========================================================================================== 
 =================================NAVIGATION BAR=============================================
 ========================================================================================== */
 
 nav {
+    height: 10vh;
     display: flex;
     align-items: center;
     background-color: var(--clr-background-nav);
+    position: relative;
+    margin: 0 -9999rem;
+    /* add back section padding value */
+    padding: 0.25rem 9999rem;
 }
 
 #nav-img {
@@ -115,17 +136,18 @@ nav {
 ========================================================================================== */
 
 #hero {
-    margin-top: 1em;
-    height: 90vh;
     width: 100%;
-    background-image: url(img/hero.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 60%;
-    background-position-y: 3%;
+    height: 90vh;
     background-color: var(--clr-background-nav);
     display: flex;
     flex-direction: column;
+    margin: 0 -9999rem;
+    /* add back section padding value */
+    padding: 0.25rem 9999rem;
+}
+
+#hero img {
+    width: 100%;
 }
 
 #hero-txt a {
@@ -134,9 +156,9 @@ nav {
 
 #hero-placement {
     width: 600px;
-    position: relative;
+    position: absolute;
     left: 15;
-    top: 32.5%;
+    top: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +182,7 @@ nav {
 }
 
 .hero-button {
-    width: 116px;
+    width: 120px;
     height: 50px;
     display: flex;
     border-radius: 2.5px;
@@ -186,6 +208,7 @@ nav {
 
 .hero-button:last-of-type {
     background-color: var(--clr-background-button);
+    border: none;
 }
 
 .hero-button a:hover {
@@ -206,6 +229,7 @@ nav {
     align-items: center;
     text-align: left;
     color: white;
+    margin-top: 5em;
     padding: 0 1% 0 1%;
 }
 
@@ -265,7 +289,7 @@ nav {
 }
 
 #definition-vision-impaired-txt a:hover {
-    color: #ff6584;
+    color: var(--clr-primary-hover);
 }
 
 #definition-vision-impaired-img {
@@ -375,14 +399,12 @@ nav {
 
 #section3-img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
-    flex-direction: row;
 }
 
 .section3-img {
     width: 50%;
-    height: 100%;
     display: flex;
     justify-content: center;
 }
