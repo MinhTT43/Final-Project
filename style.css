@@ -6,6 +6,7 @@
     --clr-background-nav: antiquewhite;
     --clr-background-button: #2f455d;
     --border-radius: 0.5rem;
+    --max-width: 1440px;
     /*================================================Font======================================= */
     --font-size-p: 1rem;
     --font-size-h1: 2.5rem;
@@ -18,12 +19,19 @@
     --font-size-h5: 1.25rem;
     --font-color: #2f455d;
     --font-color-tittle: #ff6584;
+    /*=================================nav ====================== */
+    --nav-height: 5em;
+    --clr-nav: #2f455d;
+    --background-color-hero: antiquewhite;
 }
+
 
 /* ============================================================================================*/
 
+
 /*How to use var color: 
 background: var(--clr-primary);*/
+
 
 /* ============================================================================================*/
 
@@ -54,6 +62,7 @@ p {
     font-size: var(--font-size-p);
 }
 
+
 /*  =================Container for max width================
 
 Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
@@ -66,17 +75,23 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    height: var(--nav-height);
+    background-color: var(--clr-background-nav);
+    border: solid red;
 }
 
+
+/*
 #nav-img img {
     height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border: solid green;
 }
+*/
 
 #nav-options {
-    width: 1200px;
+    max-width: 1200px;
 }
 
 #nav-options li {
@@ -88,17 +103,22 @@ nav {
     text-decoration: none;
     font-size: var(--font-size-h4);
     padding: 0 30px 0 30px;
-    color: #2f455d;
+    color: var(--clr-nav);
     transition: 0.3s;
 }
 
 #nav-options a:hover {
-    color: #ff6584;
+    color: var(--clr-primary-hover);
 }
+
 
 /*========================================================================================== 
 =================================Hero=============================================
 ========================================================================================== */
+
+#hero-backgroundcolor {
+    background-color: var(--background-color-hero);
+}
 
 #hero {
     display: flex;
@@ -108,7 +128,8 @@ nav {
     padding: 0 10% 0 20%;
     width: 100%;
     height: 90vh;
-    /* add back section padding value */
+    border: solid red;
+    width: var(--max-width);
 }
 
 #hero img {
@@ -125,6 +146,7 @@ nav {
     flex-direction: column;
     margin-left: 20px;
     width: 500px;
+    border: solid green;
 }
 
 #hero-txt h1 {
@@ -171,6 +193,7 @@ nav {
 .hero-button a:hover {
     opacity: 70%;
 }
+
 .hero-img-box {
     display: flex;
     justify-content: center;
@@ -181,13 +204,11 @@ nav {
 }
 
 
-
 /*========================================================================================== 
 =================================Seperation=============================================
 ========================================================================================== */
 
 .seperation-background {
-    width: auto;
     background-color: var(--clr-background-button);
     display: flex;
     justify-content: center;
@@ -197,9 +218,6 @@ nav {
     text-shadow: 3px 3px 3px black;
     height: 100vh;
     padding: 0 1% 0 1%;
-    margin: 0 -9999rem;
-    /* add back section padding value */
-    padding: 0.25rem 9999rem;
 }
 
 .seperation-background {
@@ -233,6 +251,7 @@ nav {
     color: var(--clr-primary-hover);
 }
 
+
 /*========================================================================================== 
 =================================Section 1=============================================
 ========================================================================================== */
@@ -262,11 +281,13 @@ nav {
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
 .section1-first-paragraph img {
     margin-right: 20px;
 }
 
 .section1-second-paragraph {
+    max-width: var(--max-width);
     display: flex;
     align-items: center;
     margin: 200px 20px 200px 200px;
@@ -278,10 +299,12 @@ nav {
     margin-left: 20px;
 }
 
+
 /*========================================================================================== 
 =================================Section 2=============================================
 ========================================================================================== */
-.seperation-background-2{
+
+.seperation-background-2 {
     width: auto;
     display: flex;
     justify-content: center;
@@ -291,42 +314,40 @@ nav {
     text-shadow: 3px 3px 3px black;
     height: 200px;
     padding: 0 1% 0 1%;
-    margin: 0 -9999rem;
-    /* add back section padding value */
-    padding: 0.25rem 9999rem;
-}
-
-.seperation-background-2{
     background-color: var(--clr-background-button);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.seperation-txt-box-2{
-    width: 800px;
-    padding:  80px 100px 80px 100px;
+.seperation-txt-box-2 {
+    max-width: var(--max-width);
+    border: solid red;
+}
+
+#section2-txt {
+    border: solid green;
+    max-width: var(--max-width);
+    padding: 0 1% 0 1%;
 }
 
 #section2-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+    height: auto;
     padding-top: 50px;
     margin: 20px;
-    margin-right: 350px;
-    margin-left: 350px;
-
+    border: solid red;
+    margin: auto;
 }
 
 .section2-main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .section2-stats-container {
@@ -335,15 +356,18 @@ nav {
     align-items: center;
     text-align: center;
     color: var(--font-color-tittle);
-    width: 250px;
+    max-width: 250px;
+    border: solid yellow;
 }
 
 .section2-align-elements {
     flex-direction: column;
     background-color: white;
-    margin-top: 150px;
-    padding: 20px 0  50px 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+    margin: 100px 0 100px 0;
+    padding: 20px 0 50px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: solid red;
+}
 
 .section2-img img {
     height: 300px;
@@ -355,9 +379,11 @@ nav {
     font-size: var(--font-size-p);
 }
 
+
 /*========================================================================================== 
 =================================Section 3=============================================
 ========================================================================================== */
+
 .seperation-background-3 {
     width: auto;
     background-color: var(--clr-background-button);
@@ -369,40 +395,44 @@ nav {
     text-shadow: 0px 0px 1px black;
     height: 500px;
     padding: 0 1% 0 1%;
-    margin: 0 -9999rem;
-    /* add back section padding value */
-    padding: 0.25rem 9999rem;
+    border: solid black;
 }
 
 .seperation-background-3 {
-  background-image: url("https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.seperation-txt-box-3{
+.seperation-txt-box-3 {
     width: 800px;
-    padding:  80px 100px 80px 100px;
+    padding: 80px 100px 80px 100px;
 }
-.seperation-txt-box-3 h1{
+
+.seperation-txt-box-3 h1 {
     font-size: 9em;
 }
 
 #section3 {
-    height: 100vh;
-    width: auto;
-    margin-top: 200px;
+    height: 100%;
+    width: 100%;
+    margin: 100px 0 100px 0;
+    /*
     padding: 0 500px 0 500px;
+    */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: solid red;
 }
 
 #section3-tittle {
+    max-width: var(--max-width);
     width: 100%;
+    border: solid red;
 }
 
 #section3-tittle-placement {
@@ -414,10 +444,11 @@ nav {
     text-align: center;
     width: 50%;
     height: 100%;
+    border: solid green;
 }
 
 #section3-img {
-    width: 100%;
+    max-width: var(--max-width);
     height: 300px;
     display: flex;
 }
@@ -437,7 +468,8 @@ nav {
     margin-top: 20px;
     margin-bottom: 200px;
     height: 200px;
-    width: 100%;
+    max-width: var(--max-width);
+    padding: 0 1% 0 1%;
 }
 
 #section3-txt p {
@@ -454,6 +486,7 @@ nav {
     color: white;
     transition: 0.3s;
 }
+
 
 /*========================================================================================== 
 =================================Footer=============================================
