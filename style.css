@@ -179,14 +179,15 @@ nav {
     opacity: 70%;
 }
 .hero-img-box {
-    align-content: unset;
-    position: absolute; 
-    bottom: 0;
-    right: 20%;
-    height: 600px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
+    max-height: 200px;
+    opacity: 0.9;
 }
+
+
 
 /*========================================================================================== 
 =================================Seperation=============================================
@@ -195,20 +196,32 @@ nav {
 .seperation-background {
     width: auto;
     background-color: var(--clr-background-button);
-    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
     color: white;
+    text-shadow: 3px 3px 3px black;
+    height: 300px;
     padding: 0 1% 0 1%;
     margin: 0 -9999rem;
     /* add back section padding value */
     padding: 0.25rem 9999rem;
 }
 
+.seperation-background {
+    background-image: url("img/coffee.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .seperation-txt-box {
-    width: 800px;
+    width: 600px;
+    padding:  80px 100px 80px 100px;
+    background-color: var(--clr-background-button);
 }
 
 .seperation-txt-box h1 {
@@ -275,29 +288,44 @@ nav {
 /*========================================================================================== 
 =================================Section 2=============================================
 ========================================================================================== */
+.seperation-background-2{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    height: 200px;
+    padding: 0 1% 0 1%;
+    margin: 0 -9999rem;
+    /* add back section padding value */
+    padding: 0.25rem 9999rem;
+}
+
+.seperation-background-2{
+    background-color: var(--clr-background-button);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seperation-txt-box-2{
+    width: 800px;
+    padding:  80px 100px 80px 100px;
+}
 
 #section2-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 600px;
     padding-top: 50px;
     margin: 20px;
-}
+    margin-right: 350px;
+    margin-left: 350px;
 
-#section2-container a {
-    text-decoration: none;
-    color: var(--font-color);
-}
-
-#section2-container a:hover {
-    color: var(--font-color-tittle);
-}
-
-#section2-txt h1 {
-    color: var(--font-color-tittle);
-}
-
-#section2-txt p {
-    font-size: var(--font-size-p);
-    padding-bottom: 20px;
 }
 
 .section2-main-container {
@@ -305,6 +333,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
 }
 
 .section2-stats-container {
@@ -333,6 +363,34 @@ nav {
 /*========================================================================================== 
 =================================Section 3=============================================
 ========================================================================================== */
+.seperation-background-3 {
+    width: auto;
+    background-color: var(--clr-background-button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    height: 500px;
+    padding: 0 1% 0 1%;
+    margin: 0 -9999rem;
+    /* add back section padding value */
+    padding: 0.25rem 9999rem;
+}
+
+.seperation-background-3 {
+  background-image: url("img/self-care.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seperation-txt-box-3{
+    width: 800px;
+    padding:  80px 100px 80px 100px;
+}
 
 #section3 {
     height: 100%;
