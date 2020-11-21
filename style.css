@@ -6,6 +6,7 @@
     --clr-background-nav: antiquewhite;
     --clr-background-button: #2f455d;
     --border-radius: 0.5rem;
+    --max-width: 1440px;
     /*================================================Font======================================= */
     --font-size-p: 1.25rem;
     --font-size-h1: 2.5rem;
@@ -93,7 +94,7 @@ nav {
 */
 
 #nav-options {
-    width: 1200px;
+    max-width: 1200px;
 }
 
 #nav-options li {
@@ -128,7 +129,7 @@ nav {
     align-items: center;
     height: 90vh;
     border: solid red;
-    width: 1200px;
+    width: var(--max-width);
 }
 
 #hero img {
@@ -228,7 +229,7 @@ nav {
 }
 
 .seperation-txt-box {
-    max-width: 1200px;
+    max-width: var(--max-width);
     border: solid red;
 }
 
@@ -276,7 +277,7 @@ nav {
 }
 
 .section1-first-paragraph {
-    max-width: 1200px;
+    max-width: var(--max-width);
     border: solid red;
     display: flex;
     align-items: center;
@@ -292,7 +293,7 @@ nav {
 }
 
 .section1-second-paragraph {
-    max-width: 1200px;
+    max-width: var(--max-width);
     display: flex;
     align-items: center;
     height: 100%;
@@ -326,13 +327,13 @@ nav {
 }
 
 .seperation-txt-box-2 {
-    max-width: 1200px;
+    max-width: var(--max-width);
     border: solid red;
 }
 
 #section2-txt {
     border: solid green;
-    max-width: 1200px;
+    max-width: var(--max-width);
     padding: 0 1% 0 1%;
 }
 
@@ -434,7 +435,7 @@ nav {
 }
 
 #section3-tittle {
-    max-width: 1200px;
+    max-width: var(--max-width);
     width: 100%;
     border: solid red;
 }
@@ -452,7 +453,7 @@ nav {
 }
 
 #section3-img {
-    max-width: 1200px;
+    max-width: var(--max-width);
     height: 300px;
     display: flex;
 }
@@ -472,7 +473,7 @@ nav {
     margin-top: 20px;
     margin-bottom: 200px;
     height: 200px;
-    max-width: 1200px;
+    max-width: var(--max-width);
     padding: 0 1% 0 1%;
 }
 
