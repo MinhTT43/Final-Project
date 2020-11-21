@@ -61,10 +61,8 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 .center-container {
     max-width: 1200px;
-    text-align: left;
     margin: 0px auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: auto;
 }
@@ -74,49 +72,31 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 ========================================================================================== */
 
 nav {
-    height: 10vh;
     display: flex;
     align-items: center;
-    background-color: var(--clr-background-nav);
-    position: relative;
-    margin: 0 -9999rem;
-    /* add back section padding value */
-    padding: 0.25rem 9999rem;
-}
-
-#nav-img {
-    width: 20%;
-    margin-left: 5%;
-    display: flex;
     justify-content: center;
+    height: 10vh;
 }
 
 #nav-img img {
-    width: 100%;
-    height: 100%;
+    height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 #nav-options {
-    width: 75%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 1200px;
 }
 
 #nav-options li {
-    width: 100%;
-    list-style-type: none;
     text-align: right;
-    margin-right: 2.5%;
+    list-style-type: none;
 }
 
 #nav-options a {
     text-decoration: none;
-    font-size: var(--font-size-h1);
-    padding: 0 2.5% 0 2.5%;
+    font-size: var(--font-size-h4);
+    padding: 0 30px 0 30px;
     color: #2f455d;
     transition: 0.3s;
 }
@@ -130,14 +110,12 @@ nav {
 ========================================================================================== */
 
 #hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 90vh;
-    background-color: var(--clr-background-nav);
-    display: flex;
-    flex-direction: column;
-    margin: 0 -9999rem;
     /* add back section padding value */
-    padding: 0.25rem 9999rem;
 }
 
 #hero img {
@@ -148,17 +126,11 @@ nav {
     color: var(--clr-primary-hover);
 }
 
-#hero-placement {
+#hero-text-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
     flex-direction: column;
-    position: absolute;
-    top: 40%;
     margin-left: 20px;
-}
-
-#hero-txt {
     width: 500px;
 }
 
@@ -184,19 +156,18 @@ nav {
 }
 
 .hero-button a {
+    align-items: center;
+    justify-content: center;
     width: 500px;
-
-    border: solid #2f455d;
+    padding: 15px 10px 15px 10px;
     color: #2f455d;
     font-size: 1rem;
-    text-decoration: none;
-    padding: 15px 10px 15px 10px;
     font-weight: bold;
     transition: 0.3s;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    border: solid #2f455d;
     border-radius: 2.5px;
+    text-decoration: none;
 }
 
 .hero-button:last-of-type {
@@ -206,6 +177,15 @@ nav {
 
 .hero-button a:hover {
     opacity: 70%;
+}
+.hero-img-box {
+    align-content: unset;
+    position: absolute; 
+    bottom: 0;
+    right: 20%;
+    height: 600px;
+    display: block;
+    width: 400px;
 }
 
 /*========================================================================================== 
@@ -227,7 +207,7 @@ nav {
     padding: 0.25rem 9999rem;
 }
 
-.seperation-txt-box{
+.seperation-txt-box {
     width: 800px;
 }
 
@@ -253,54 +233,43 @@ nav {
 ========================================================================================== */
 
 .section1-section {
-    display: inline;
-    flex-direction: column;
+    display: block;
 }
 
 #section1-heading {
     margin: 50px 0 50px 0;
     justify-content: center;
-    margin: 200px 20px 0 20px;
 }
 
-#section1-heading h1 {
-    color: var(--font-color-tittle);
-    text-align: center;
-}
-
-#definition-vision-impaired {
-    display: flex;
-}
-
-#definition-vision-impaired-txt {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px 20px 20px 20px;
-}
-
-#definition-vision-impaired-txt a {
-    text-decoration: none;
-    color: var(--font-color);
-}
-
-#definition-vision-impaired-txt a:hover {
-    color: var(--clr-primary-hover);
-}
-
-#definition-vision-impaired-img {
+.vision-impaired-img img {
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
+    height: 100%;
+    width: 300px;
+    min-height: 300px;
 }
 
-#definition-vision-impaired-img img {
-    width: auto;
-    height: 350px;
+.section1-first-paragraph {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 200px 200px 200px 20px;
+}
+.section1-first-paragraph img {
+    margin-right: 20px;
 }
 
-#definition-vision-impaired-2 {
-    margin: 20px;
+.section1-second-paragraph {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 200px 20px 200px 200px;
+}
+
+.section1-second-paragraph img {
+    margin-left: 20px;
 }
 
 /*========================================================================================== 
@@ -322,7 +291,6 @@ nav {
     color: var(--font-color-tittle);
 }
 
-
 #section2-txt h1 {
     color: var(--font-color-tittle);
 }
@@ -331,8 +299,6 @@ nav {
     font-size: var(--font-size-p);
     padding-bottom: 20px;
 }
-
-
 
 .section2-main-container {
     margin-top: 50px;
