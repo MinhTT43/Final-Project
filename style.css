@@ -30,7 +30,6 @@ background: var(--clr-primary);*/
 body {
     font-family: "Lexend Deca", sans-serif;
     line-height: var(--font-line-height);
-    background-color: var(--clr-body);
     color: var(--font-color);
     margin: 0 auto;
     float: none;
@@ -219,9 +218,7 @@ nav {
 
 
 .seperation-txt-box {
-    width: 600px;
     padding:  80px 100px 80px 100px;
-    background-color: var(--clr-background-button);
 }
 
 .seperation-txt-box h1 {
@@ -320,7 +317,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px;
+    height: 100vh;
     padding-top: 50px;
     margin: 20px;
     margin-right: 350px;
@@ -329,7 +326,6 @@ nav {
 }
 
 .section2-main-container {
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -348,7 +344,10 @@ nav {
 
 .section2-align-elements {
     flex-direction: column;
-}
+    background-color: white;
+    margin-top: 150px;
+    padding: 20px 0  50px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .section2-img img {
     height: 300px;
@@ -371,7 +370,7 @@ nav {
     align-items: center;
     text-align: left;
     color: white;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 0px 0px 1px black;
     height: 500px;
     padding: 0 1% 0 1%;
     margin: 0 -9999rem;
@@ -380,7 +379,7 @@ nav {
 }
 
 .seperation-background-3 {
-  background-image: url("img/self-care.jpeg");
+  background-image: url("https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -391,12 +390,15 @@ nav {
     width: 800px;
     padding:  80px 100px 80px 100px;
 }
+.seperation-txt-box-3 h1{
+    font-size: 9em;
+}
 
 #section3 {
-    height: 100%;
+    height: 100vh;
     width: auto;
-    margin-top: 20px;
-    padding: 0 20px 0 20px;
+    margin-top: 200px;
+    padding: 0 500px 0 500px;
     display: flex;
     justify-content: center;
     align-items: center;
