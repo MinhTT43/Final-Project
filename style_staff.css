@@ -162,10 +162,6 @@ p {
 /* ======================= Section B END ========================== */
 
 @media only screen and (max-width: 1440px) {
-    .container {
-        width: auto;
-    }
-
     .profile-wrapper {
         flex-direction: column;
     }
