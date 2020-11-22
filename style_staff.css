@@ -162,10 +162,6 @@ p {
 /* ======================= Section B END ========================== */
 
 @media only screen and (max-width: 1440px) {
-    .container {
-        width: auto;
-    }
-
     .profile-wrapper {
         flex-direction: column;
     }
@@ -176,5 +172,25 @@ p {
 
     .section-a img {
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section-a {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .section-a img {
+        max-width: 60%;
+        align-self: center;
+    }
+
+    .staff-text {
+        max-width: 400px;
+        margin: 2rem 2rem 2rem 2rem;
+        align-self: center;
+        text-align: center;
     }
 }
