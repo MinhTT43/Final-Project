@@ -114,6 +114,11 @@ nav {
     text-transform: uppercase;
 }
 
+.title-color2 {
+    color: var(--clr-pink);
+    text-transform: uppercase;
+}
+
 .btn-primary {
     font-size: 15px;
     background: var(--clr-darkblue);
