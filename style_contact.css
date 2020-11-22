@@ -1,0 +1,247 @@
+:root {
+    /* Setting color variables */
+    --clr-background: #e4887810;
+    --clr-darkblue: #2f455d;
+    --clr-pink: #ff6584;
+    --clr-lightgray: #e9e9e9;
+    --border-radius: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    float: none;
+}
+
+main {
+    padding: 20px;
+    background-color: var(--clr-shadow);
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/*++++++++++++ Nav - Bar ++++++++++++*/
+
+nav {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--clr-background-nav);
+}
+
+#nav-img {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-img img {
+    width: 250px;
+    height: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#nav-options {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-options li {
+    width: 100%;
+    list-style-type: none;
+    text-align: right;
+    margin-right: 2.5%;
+}
+
+#nav-options a {
+    text-decoration: none;
+    font-size: var(--font-size-h1);
+    padding: 0 2.5% 0 2.5%;
+    color: #2f455d;
+    transition: 0.3s;
+}
+
+#nav-options a:hover {
+    color: #ff6584;
+}
+
+
+/*------------ Nav - Bar ------------*/
+
+
+/*++++++++++++ Wrapper and container ++++++++++++*/
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50vh;
+    padding: 30px;
+    background-color: var(--clr-shadow);
+}
+
+.container {
+    border-radius: var(--border-radius);
+    border: solid var(--clr-lightgray);
+    width: 200px;
+    margin: 30px;
+    padding: 30px;
+    height: 5rem;
+    text-align: center;
+    color: var(--clr-darkblue);
+}
+
+
+/*------------ Wrapper and container ------------*/
+
+.title-color {
+    color: var(--clr-darkblue);
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    font-size: 15px;
+    background: var(--clr-darkblue);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    padding: 13px 20px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--clr-pink);
+}
+
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+.banner-area {
+    color: black;
+    text-align: center;
+    height: 75vh;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 60px;
+}
+
+.banner-area h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.banner-area h2 {
+    margin-bottom: 20px;
+}
+
+.background-img {
+    display: flex;
+    height: 20rem;
+}
+
+.background-color {
+    background-color: var(--clr-background);
+}
+
+.ul.about-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content li {
+    padding: 20px;
+    height: 300px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+    section {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
+    header nav li {
+        margin: 0 7px;
+    }
+    section {
+        padding: 125px 30px;
+    }
+    .banner-area {
+        min-height: 600px;
+    }
+    .wrapper {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        flex-direction: column;
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
+    header nav li {
+        margin: 0 7px;
+    }
+    section {
+        padding: 125px 30px;
+    }
+    .banner-area {
+        min-height: 600px;
+    }
+    .wrapper {
+        margin-top: 4rem;
+    }
+    .background-img {
+        height: 10rem;
+    }
+    .container {
+        width: 150px;
+        height: 3.5rem;
+    }
+}
