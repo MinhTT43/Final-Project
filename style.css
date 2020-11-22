@@ -7,10 +7,10 @@
     --clr-background-button: #2f455d;
     --border-radius: 0.5rem;
     /*================================================Font======================================= */
-    --font-size-p: 1.25rem;
-    --font-size-h1: 2.5rem;
+    --font-size-p: 1rem;
+    --font-size-h1: 3rem;
     --font-size-h1-small: 2rem;
-    --font-size-h2: 2rem;
+    --font-size-h2: 1.75rem;
     --font-word-spacing: ;
     --font-line-height: 1.5;
     --font-size-h3: 1.75rem;
@@ -186,8 +186,6 @@ nav {
     opacity: 0.9;
 }
 
-
-
 /*========================================================================================== 
 =================================Seperation=============================================
 ========================================================================================== */
@@ -201,7 +199,7 @@ nav {
     text-align: left;
     color: white;
     text-shadow: 3px 3px 3px black;
-    height: 300px;
+    height: 110vh;
     padding: 0 1% 0 1%;
     margin: 0 -9999rem;
     /* add back section padding value */
@@ -209,32 +207,24 @@ nav {
 }
 
 .seperation-background {
-    background-image: url("img/coffee.jpg");
+    background-image: url(img/Blurred.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-.seperation-txt-box {
-    padding:  80px 100px 80px 100px;
+.seperation-txt-box-1 {
+    width: 1000;
+    text-align: center;
 }
 
-.seperation-txt-box h1 {
-    font-size: var(--font-size-h1);
-}
-
-.seperation-txt-box p {
-    font-size: var(--font-size-p);
-}
-
-.seperation-txt-box a {
+.seperation-txt-box-1 a {
     text-decoration: none;
     color: white;
 }
 
-.seperation-txt-box a:hover {
+.seperation-txt-box-1 a:hover {
     color: var(--clr-primary-hover);
 }
 
@@ -244,6 +234,7 @@ nav {
 
 .section1-section {
     display: block;
+    margin: 150px 0 150px 0;
 }
 
 #section1-heading {
@@ -264,28 +255,43 @@ nav {
 .section1-first-paragraph {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
-    margin: 200px 200px 200px 20px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .section1-first-paragraph img {
     margin-right: 20px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.vision-impaired-txt{
+    width: 500px;
 }
 
 .section1-second-paragraph {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
-    margin: 200px 20px 200px 200px;
+    margin:20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .section1-second-paragraph img {
     margin-left: 20px;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
 }
 
 /*========================================================================================== 
 =================================Section 2=============================================
 ========================================================================================== */
-.seperation-background-2{
+.seperation-background-2 {
     width: auto;
     display: flex;
     justify-content: center;
@@ -293,66 +299,63 @@ nav {
     text-align: left;
     color: white;
     text-shadow: 3px 3px 3px black;
-    height: 200px;
-    padding: 0 1% 0 1%;
-    margin: 0 -9999rem;
-    /* add back section padding value */
-    padding: 0.25rem 9999rem;
+    height: 400px;
 }
 
-.seperation-background-2{
+.seperation-background-2 {
+    background-image: url(https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-color: var(--clr-background-button);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.seperation-txt-box-2{
-    width: 800px;
-    padding:  80px 100px 80px 100px;
+.seperation-txt-box-2 {
+    width: 1200px;
+    align-items: center;
+    text-align: center;
+    
+}
+.section2-txt{
+    margin: 100px 0 50px 0;
+    width: 600px
 }
 
 #section2-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    padding-top: 50px;
-    margin: 20px;
-    margin-right: 350px;
-    margin-left: 350px;
-
+    height: 100%;
+    margin: 200px 250px 200px 250px;
 }
 
 .section2-main-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .section2-stats-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    color: var(--font-color-tittle);
-    width: 250px;
+    flex-wrap: wrap;
+    text-align: left;
+    height: 100%;
 }
 
 .section2-align-elements {
     flex-direction: column;
     background-color: white;
-    margin-top: 150px;
-    padding: 20px 0  50px 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+    max-width: 250px;
+    margin: 20px 0 20px 0;
+}
 
 .section2-img img {
-    height: 300px;
-    width: 100%;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
+    border:solid 1px #acb5be;
+
 }
 
 .section2-main-container p {
@@ -370,28 +373,30 @@ nav {
     align-items: center;
     text-align: left;
     color: white;
-    text-shadow: 0px 0px 1px black;
-    height: 500px;
+    height: 110vh;
     padding: 0 1% 0 1%;
-    margin: 0 -9999rem;
-    /* add back section padding value */
-    padding: 0.25rem 9999rem;
+
 }
 
 .seperation-background-3 {
-  background-image: url("https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(img/Enhanced.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.seperation-txt-box-3{
+.seperation-txt-box-3 {
     width: 800px;
-    padding:  80px 100px 80px 100px;
+    padding: 80px 100px 80px 100px;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    text-shadow: 0 0 10px #2f455d, 40px 40px 5px rgba(0,0,0,0);
+
 }
-.seperation-txt-box-3 h1{
-    font-size: 9em;
+.seperation-txt-box-3 h1 {
+    font-size: 7em;
+line-height: 1em;
 }
 
 #section3 {
@@ -444,9 +449,7 @@ nav {
     width: 100%;
 }
 
-#section3-txt p {
-    font-size: var(--font-size-p);
-}
+
 
 .button-section3 {
     font-size: 1rem;
