@@ -18,12 +18,18 @@
     --font-size-h5: 1.25rem;
     --font-color: #2f455d;
     --font-color-tittle: #ff6584;
+    /*=================================== max - width ================== */
+    /*=================================== max - width ================== */
+    --max-width: 1200px;
 }
+
 
 /* ============================================================================================*/
 
+
 /*How to use var color: 
 background: var(--clr-primary);*/
+
 
 /* ============================================================================================*/
 
@@ -54,17 +60,6 @@ p {
     font-size: var(--font-size-p);
 }
 
-/*  =================Container for max width================
-
-Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
-
-.center-container {
-    max-width: 1200px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    width: auto;
-}
 
 /*========================================================================================== 
 =================================NAVIGATION BAR=============================================
@@ -104,17 +99,23 @@ nav {
     color: #ff6584;
 }
 
+
 /*========================================================================================== 
 =================================Hero=============================================
 ========================================================================================== */
+
+#hero-container-placement {
+    display: flex;
+    justify-content: center;
+}
 
 #hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: var(--max-width);
     height: 90vh;
-    /* add back section padding value */
+    border: solid red;
 }
 
 #hero img {
@@ -177,6 +178,7 @@ nav {
 .hero-button a:hover {
     opacity: 70%;
 }
+
 .hero-img-box {
     display: flex;
     justify-content: center;
@@ -185,6 +187,7 @@ nav {
     max-height: 200px;
     opacity: 0.9;
 }
+
 
 /*========================================================================================== 
 =================================Seperation=============================================
@@ -201,9 +204,6 @@ nav {
     text-shadow: 3px 3px 3px black;
     height: 110vh;
     padding: 0 1% 0 1%;
-    margin: 0 -9999rem;
-    /* add back section padding value */
-    padding: 0.25rem 9999rem;
 }
 
 .seperation-background {
@@ -228,12 +228,15 @@ nav {
     color: var(--clr-primary-hover);
 }
 
+
 /*========================================================================================== 
 =================================Section 1=============================================
 ========================================================================================== */
 
 .section1-section {
-    display: block;
+    display: flex;
+    border: solid red;
+    flex-direction: column;
     margin: 150px 0 150px 0;
 }
 
@@ -248,11 +251,31 @@ nav {
     align-items: center;
     object-fit: cover;
     height: 100%;
-    width: 300px;
-    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .section1-first-paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.section1-first-paragraph img {
+    margin-right: 20px;
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.vision-impaired-txt {
+    max-width: 500px;
+}
+
+.section1-second-paragraph {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -261,36 +284,19 @@ nav {
     padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.section1-first-paragraph img {
-    margin-right: 20px;
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-}
-.vision-impaired-txt{
-    width: 500px;
-}
-
-.section1-second-paragraph {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    margin:20px;
-    padding: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
 
 .section1-second-paragraph img {
     margin-left: 20px;
-    height: 300px;
-    width: 300px;
+    max-height: 300px;
+    max-width: 300px;
     object-fit: cover;
 }
+
 
 /*========================================================================================== 
 =================================Section 2=============================================
 ========================================================================================== */
+
 .seperation-background-2 {
     width: auto;
     display: flex;
@@ -315,19 +321,19 @@ nav {
     width: 1200px;
     align-items: center;
     text-align: center;
-    
 }
-.section2-txt{
+
+.section2-txt {
     margin: 100px 0 50px 0;
-    width: 600px
+    max-width: 600px;
 }
 
 #section2-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100%;
-    margin: 200px 250px 200px 250px;
 }
 
 .section2-main-container {
@@ -335,12 +341,14 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: var(--max-width);
 }
 
 .section2-stats-container {
     flex-wrap: wrap;
     text-align: left;
     height: 100%;
+    margin: 0 10px 0 10px;
 }
 
 .section2-align-elements {
@@ -354,17 +362,18 @@ nav {
     height: 250px;
     width: 250px;
     object-fit: cover;
-    border:solid 1px #acb5be;
-
+    border: solid 1px #acb5be;
 }
 
 .section2-main-container p {
     font-size: var(--font-size-p);
 }
 
+
 /*========================================================================================== 
 =================================Section 3=============================================
 ========================================================================================== */
+
 .seperation-background-3 {
     width: auto;
     background-color: var(--clr-background-button);
@@ -375,7 +384,6 @@ nav {
     color: white;
     height: 110vh;
     padding: 0 1% 0 1%;
-
 }
 
 .seperation-background-3 {
@@ -389,45 +397,55 @@ nav {
 .seperation-txt-box-3 {
     width: 800px;
     padding: 80px 100px 80px 100px;
-    font-family: 'Cinzel', serif;
+    font-family: "Cinzel", serif;
     font-weight: 900;
-    text-shadow: 0 0 10px #2f455d, 40px 40px 5px rgba(0,0,0,0);
-
+    text-shadow: 0 0 10px #2f455d, 40px 40px 5px rgba(0, 0, 0, 0);
 }
+
 .seperation-txt-box-3 h1 {
     font-size: 7em;
-line-height: 1em;
+    line-height: 1em;
 }
 
 #section3 {
     height: 100vh;
     width: auto;
-    margin-top: 200px;
-    padding: 0 500px 0 500px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: solid red;
+    max-width: var(--max-width);
 }
 
-#section3-tittle {
-    width: 100%;
+
+/* ======================================================= */
+
+.center-align {
+    display: flex;
+    justify-content: center;
 }
+
+
+/* ======================================================= */
 
 #section3-tittle-placement {
+    border: solid green;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .section3 {
     text-align: center;
-    width: 50%;
     height: 100%;
+    width: 100%;
+    border: solid yellow;
 }
 
 #section3-img {
-    width: 100%;
-    height: 300px;
+    max-height: 300px;
     display: flex;
 }
 
@@ -446,10 +464,8 @@ line-height: 1em;
     margin-top: 20px;
     margin-bottom: 200px;
     height: 200px;
-    width: 100%;
+    max-width: var(--max-width);
 }
-
-
 
 .button-section3 {
     font-size: 1rem;
@@ -462,33 +478,50 @@ line-height: 1em;
     transition: 0.3s;
 }
 
-/*========================================================================================== 
-=================================Footer=============================================
+@media only screen and (max-width: 1200px) {
+    /*========================================================================================== 
+=================================NAVIGATION BAR=============================================
 ========================================================================================== */
-
-footer {
-    width: 100%;
-    height: 7.5%;
-    background-color: #2f455d;
-    color: white;
-    display: flex;
-    flex-direction: row;
+    #nav-options {
+        width: 100%;
+    }
+    /*========================================================================================== 
+=================================Hero=============================================
+========================================================================================== */
+    #hero {
+        width: 100%;
+    }
+    /*========================================================================================== 
+=================================Section 3=============================================
+========================================================================================== */
 }
 
-#sources {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#sources a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-    font-size: var(--font-size-p);
-}
-
-#sources a:hover {
-    color: #ff6584;
+@media only screen and (max-width: 800px) {
+    /*========================================================================================== 
+=================================NAVIGATION BAR=============================================
+========================================================================================== */
+    #nav-options {
+        max-width: 1200px;
+    }
+    /*========================================================================================== 
+=================================Hero=============================================
+========================================================================================== */
+    #hero {
+        max-width: var(--max-width);
+    }
+    /*========================================================================================== 
+=================================Section 1=============================================
+========================================================================================== */
+    .section1-first-paragraph {
+        width: 100%;
+    }
+    .vision-impaired-txt {
+        max-width: 500px;
+    }
+    .section1-second-paragraph {
+        width: 100%;
+    }
+    /*========================================================================================== 
+=================================Section 3=============================================
+========================================================================================== */
 }
