@@ -1,0 +1,231 @@
+:root {
+    /* Variabler */
+    --clr-primary: #ff6584;
+    --clr-secondary: #0e1e31;
+    --clr-primary-hover: #932432;
+    --clr-background-nav: #e7e7e7;
+    --clr-background-seperation: lightblue;
+    --border-radius: 0.5rem;
+    --font-size-p: 1rem;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --line-height: 1.7em;
+}
+
+/*How to use var color: 
+background: var(--clr-primary);
+*/
+
+html,
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+p {
+    font-size: var(--font-size-p);
+    line-height: 1.75rem;
+    padding-top: 2%;
+}
+
+/*  =================Container for max width================
+
+Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
+
+.center-container {
+    max-width: 1440px;
+    text-align: left;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+/* =============Section A============= */
+.container-a {
+    margin: 8rem 2rem 2rem 2rem;
+    color: black;
+}
+
+.heading-a {
+    font-size: var(--font-size-h1);
+    color: var(--clr-primary);
+    text-align: center;
+}
+
+.tech-wrapper {
+    margin: 8rem 0rem;
+    display: flex;
+}
+
+.tech-explainer {
+    margin: 2rem 2rem 0rem 2rem;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-explainer .tech-img {
+    max-height: 100%;
+    max-width: 100%;
+    /* align-items: center; */
+}
+
+.tech-heading {
+    margin-top: 1rem;
+    font-size: var(--font-size-h3);
+    text-align: center;
+}
+
+.tech-explainer h3 {
+    font-size: var(--font-size-h3);
+    margin: 1rem 1rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: black;
+    text-align: center;
+}
+
+.tech-explainer p {
+    font-size: var(--font-size-p);
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.75rem;
+    padding-top: 2%;
+}
+
+/* ===============Section A END=========== */
+
+/* ==============Section B============== */
+
+.section-b {
+    max-width: 100%;
+    background-color: var(--clr-background-seperation);
+    position: relative;
+    margin: 0 -9999rem;
+    /* add back section padding value */
+    padding: 0.25rem 9999rem;
+}
+
+.container-b {
+    text-align: center;
+    margin: 4rem 8rem 4rem 8rem;
+    color: black;
+}
+
+.section-b h1 {
+    font-size: 2rem;
+}
+
+/* ===========Section B END=========== */
+
+/* =========Section C=============== */
+
+.section-c {
+    margin-top: 4rem;
+}
+
+.container-c {
+    margin: 0rem 0rem 14rem 0rem;
+    color: black;
+}
+
+.tracking-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 0rem;
+    align-items: center;
+}
+
+.tracking-explainer {
+    margin: 2rem 2rem rem 2rem;
+    width: 400px;
+}
+
+.tracking-explainer .tracking-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.tracking-explainer h3 {
+    font-size: var(--font-size-h3);
+    margin: 1rem 1rem;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+}
+
+.container-c p {
+    font-size: 1.2rem; /* Needs larger than p */
+    font-weight: 100;
+    margin: 0rem 4rem 4rem 4rem;
+    color: black;
+    text-align: center;
+}
+
+/* Section C END */
+
+@media only screen and (max-width: 1440px) {
+    .tech-explainer {
+        width: auto;
+    }
+
+    .tracking-explainer {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .tech-wrapper {
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tracking-wrapper {
+        flex-direction: column;
+        width: auto;
+    }
+    .tech-explainer {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tracking-explainer {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+}
