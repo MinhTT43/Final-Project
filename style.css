@@ -115,7 +115,6 @@ nav {
     align-items: center;
     width: var(--max-width);
     height: 90vh;
-    border: solid red;
 }
 
 #hero img {
@@ -235,7 +234,6 @@ nav {
 
 .section1-section {
     display: flex;
-    border: solid red;
     flex-direction: column;
     margin: 150px 0 150px 0;
 }
@@ -415,7 +413,6 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: solid red;
     max-width: var(--max-width);
 }
 
@@ -431,7 +428,6 @@ nav {
 /* ======================================================= */
 
 #section3-tittle-placement {
-    border: solid green;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -441,7 +437,6 @@ nav {
     text-align: center;
     height: 100%;
     width: 100%;
-    border: solid yellow;
 }
 
 #section3-img {
