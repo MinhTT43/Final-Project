@@ -1,0 +1,176 @@
+:root {
+    /* Variabler */
+    --clr-primary: #ff6584;
+    --clr-secondary: #0e1e31;
+    --clr-primary-hover: #932432;
+    --clr-background-nav: #e7e7e7;
+    --clr-background-seperation: lightblue;
+    --border-radius: 0.5rem;
+    --font-size-p: 1rem;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --line-height: 1.7em;
+}
+
+/*How to use var color: 
+background: var(--clr-primary);
+*/
+
+html,
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: (--font-size-h3);
+}
+
+p {
+    font-size: var(--font-size-p);
+    line-height: 1.75rem;
+    padding-top: 2%;
+}
+
+.center-container {
+    max-width: 1440px;
+    text-align: left;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+/* ===================== Section A ======================== */
+
+.section-a {
+    height: 600px;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-a img {
+    max-width: 40%;
+    align-self: flex-end;
+}
+
+.staff-text {
+    max-width: 400px;
+    margin: 8rem 2rem 2rem 0rem;
+}
+
+.staff-text h2 {
+    color: var(--clr-primary);
+}
+
+/* ==================== Section A END ========================== */
+
+/* ==================== Section B ==================== */
+
+.container-staff {
+    margin: 2rem;
+    color: black;
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0px 0px 0px;
+}
+
+.profile {
+    margin: 2rem;
+    display: flex;
+    flex-basis: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .profile-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.staff-name {
+    margin-top: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.profile h5 {
+    font-size: ;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profile p {
+    font-size: ;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 80px 0px;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #000000;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    background-color: var(--clr-primary);
+    text-align: center;
+    transition: all 0.15s;
+}
+.button:hover {
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    color: black;
+    border-color: #ffffff;
+}
+
+/* ======================= Section B END ========================== */
+
+@media only screen and (max-width: 1440px) {
+    .profile-wrapper {
+        flex-direction: column;
+    }
+
+    .staff-text {
+        width: auto;
+    }
+
+    .section-a img {
+        width: auto;
+    }
+}
