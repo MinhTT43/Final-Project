@@ -5,7 +5,7 @@
     --clr-body: white;
     --clr-background-nav: antiquewhite;
     --clr-background-button: #2f455d;
-    --border-radius: 0.5rem;
+    --border-radius: 0.2em;
     /*================================================Font======================================= */
     --font-size-p: 1rem;
     --font-size-h1: 3rem;
@@ -16,11 +16,11 @@
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
     --font-size-h5: 1.25rem;
-    --font-color: #2f455d;
-    --font-color-tittle: #ff6584;
+    --font-color: black;
+    --font-color-hover: #ff6584;
     /*=================================== max - width ================== */
     /*=================================== max - width ================== */
-    --max-width: 1200px;
+    --max-width: 1440px;
 }
 
 
@@ -36,7 +36,7 @@ background: var(--clr-primary);*/
 body {
     font-family: "Lexend Deca", sans-serif;
     line-height: var(--font-line-height);
-    color: var(--font-color);
+    color: black;
     margin: 0 auto;
     float: none;
     width: 100%;
@@ -91,12 +91,12 @@ nav {
     text-decoration: none;
     font-size: var(--font-size-h4);
     padding: 0 30px 0 30px;
-    color: #2f455d;
+    color: var(--font-color);
     transition: 0.3s;
 }
 
 #nav-options a:hover {
-    color: #ff6584;
+    color: var(--font-color-hover);
 }
 
 
@@ -138,7 +138,7 @@ nav {
 }
 
 #hero-buttons {
-    width: 500px;
+    max-width: 500px;
     display: flex;
     justify-content: left;
 }
@@ -165,7 +165,7 @@ nav {
     transition: 0.3s;
     display: flex;
     border: solid #2f455d;
-    border-radius: 2.5px;
+    border-radius: var(--border-radius);
     text-decoration: none;
 }
 
@@ -258,7 +258,8 @@ nav {
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    width: 100%;
+    margin: 20px;
+    padding: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -393,7 +394,7 @@ nav {
 }
 
 .seperation-txt-box-3 {
-    width: 800px;
+    width: 100vw;
     padding: 80px 100px 80px 100px;
     font-family: "Cinzel", serif;
     font-weight: 900;
@@ -407,13 +408,12 @@ nav {
 
 #section3 {
     height: 100vh;
-    width: auto;
+    max-width: var(--max-width);
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: var(--max-width);
 }
 
 
@@ -422,6 +422,7 @@ nav {
 .center-align {
     display: flex;
     justify-content: center;
+    max-width: var(--max-width);
 }
 
 
@@ -484,11 +485,35 @@ nav {
 =================================Hero=============================================
 ========================================================================================== */
     #hero {
-        width: 100%;
+        justify-content: center;
+        width: auto;
+    }
+    #hero-text-box {
+        width: 50%;
+        margin: 0 3.5% 0 1.5%;
+    }
+    .vision-impaired-txt {
+        max-width: 80%;
+    }
+    /*========================================================================================== 
+=================================Section 2=============================================
+========================================================================================== */
+    .section2-main-container {
+        max-width: 600px;
     }
     /*========================================================================================== 
 =================================Section 3=============================================
 ========================================================================================== */
+    #section3 {
+        height: 100vh;
+        width: auto;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: var(--max-width);
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -496,27 +521,50 @@ nav {
 =================================NAVIGATION BAR=============================================
 ========================================================================================== */
     #nav-options {
-        max-width: 1200px;
+        width: 100%;
     }
     /*========================================================================================== 
 =================================Hero=============================================
 ========================================================================================== */
     #hero {
-        max-width: var(--max-width);
+        width: 100%;
+    }
+    #hero {
+        justify-content: center;
+        flex-direction: column;
+    }
+    #hero-text-box {
+        margin: 0 0 14% 0;
+        width: 370px;
+    }
+    #hero-buttons {
+        width: 100%;
     }
     /*========================================================================================== 
 =================================Section 1=============================================
 ========================================================================================== */
     .section1-first-paragraph {
-        width: 100%;
-    }
-    .vision-impaired-txt {
-        max-width: 500px;
+        justify-content: center;
+        flex-direction: column;
     }
     .section1-second-paragraph {
-        width: 100%;
+        justify-content: center;
+        flex-direction: column;
     }
     /*========================================================================================== 
 =================================Section 3=============================================
 ========================================================================================== */
+    .seperation-txt-box-3 {
+        width: 100vw;
+        padding: 0;
+        font-family: "Cinzel", serif;
+        font-weight: 900;
+        text-shadow: 0 0 10px #2f455d, 40px 40px 5px rgba(0, 0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .section2-main-container {
+        justify-content: center;
+    }
 }
