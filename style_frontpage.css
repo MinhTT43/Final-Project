@@ -235,8 +235,13 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 2.5em 0;
 }
 
+.box-img-placement {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .child-box-img-health {
-    width: 25%;
+    width: 50%;
     height: 20em;
 }
 
@@ -282,6 +287,12 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 0 5em 5em 5em;
 }
 
+@media only screen and (max-width: 1200px) {
+    .box-img-health {
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .box-spacing {
         display: flex;
@@ -297,6 +308,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
         margin: 1em 5em;
     }
     .box-img-health {
+        flex-direction: column;
+    }
+    .box-img-placement {
         flex-direction: column;
     }
     .child-box-img-health {
