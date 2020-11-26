@@ -5,6 +5,7 @@
     --clr-primary-hover: #932432;
     --clr-background-nav: #e7e7e7;
     --clr-background-seperation: lightblue;
+    --clr-light-grey: #cdcdcd;
     --border-radius: 0.5rem;
     --font-size-p: 1rem;
     --font-size-h1: 2.5rem;
@@ -65,20 +66,28 @@ p {
 /* ===================== Section A ======================== */
 
 .section-a {
-    height: 600px;
+    height: 700px;
     margin: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.section-a img {
-    max-width: 40%;
-    align-self: flex-end;
+.container-heading {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.staff-text {
-    max-width: 400px;
-    margin: 8rem 2rem 2rem 0rem;
+.heading-img {
+    margin: 4rem 2rem 2rem 2rem;
+}
+
+.heading-img img {
+    max-width: 60%;
+}
+
+.container-heading .staff-text {
+    margin: 8rem 2rem 2rem 2rem;
 }
 
 .staff-text h2 {
@@ -89,23 +98,30 @@ p {
 
 /* ==================== Section B ==================== */
 
+.section-b {
+    margin: 2rem 0rem 2rem 0rem;
+}
+
 .container-staff {
-    margin: 2rem;
     color: black;
 }
 
 .profile-wrapper {
     display: flex;
     justify-content: space-around;
-    margin: 80px 0px 0px 0px;
+    margin: 1rem;
+    flex-wrap: wrap;
 }
 
 .profile {
-    margin: 2rem;
+    margin: 0.5rem;
+    padding: 1rem;
     display: flex;
     flex-basis: 300px;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 14px 28px var(--clr-light-grey);
+    border-radius: 0.8em;
 }
 
 .profile .profile-img {
@@ -130,18 +146,28 @@ p {
     text-align: center;
 }
 
+/* ===================== Section D ===================== */
+
+.container-contact {
+    margin: 2rem 2rem 8rem 2rem;
+    padding: 2rem;
+    box-shadow: 0 14px 28px var(--clr-light-grey);
+    border-radius: 0.8em;
+    text-align: center;
+}
+
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px 80px 0px;
 }
 
 .button {
     display: inline-block;
     padding: 0.46em 1.6em;
     border: 0.1em solid #000000;
-    margin: 0 0.2em 0.2em 0;
+    /* margin: 0 0.2em 0.2em 0; */
+    margin: 2rem;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
@@ -157,34 +183,27 @@ p {
     border-color: #ffffff;
 }
 
+/* ================= Section D END ================ */
+
 /* ======================= Section B END ========================== */
 
 @media only screen and (max-width: 1440px) {
-    .profile-wrapper {
-        flex-direction: column;
+    .section-a img {
+        width: auto;
+    }
+
+    .profile {
+        max-width: 300px;
+        padding: 2rem;
+        margin: 1rem;
     }
 
     .staff-text {
         width: auto;
     }
-
-    .section-a img {
-        width: auto;
-    }
 }
 
 @media only screen and (max-width: 800px) {
-    .section-a {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-self: center;
-    }
-
-    .section-a img {
-        max-width: 60%;
-        align-self: center;
-    }
-
     .staff-text {
         max-width: 400px;
         margin: 2rem 2rem 2rem 2rem;
