@@ -1,6 +1,6 @@
 :root {
     /* Variabler */
-    --clr-primary: #8F3A60;
+    --clr-primary: #8f3a60;
     --clr-secondary: #0e1e31;
     --clr-primary-hover: #932432;
     --clr-background-nav: #e7e7e7;
@@ -18,7 +18,7 @@
     --font-color-main: black;
     --font-color-secondary: #8f3a60;
     --font-hover: pink;
-    --box-shadow: 0 3px 6px rgba(0,0,0,0.16), 3px 0px 6px rgba(0,0,0,0.23);
+    --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
 }
 
 
@@ -45,7 +45,6 @@ body {
 h1 {
     font-size: var(--font-size-h1);
     color: var(--clr-primary);
-
 }
 
 h2 {
@@ -89,6 +88,14 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 #nav-logo {
     width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #nav-options {
@@ -128,7 +135,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 #hero-txt-box h1 {
     font-size: var(--font-size-h1);
     color: var(--clr-primary);
-
 }
 
 #hero-txt-align {
@@ -206,9 +212,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 1.25em 0 2.5em 0;
     text-align: center;
 }
+
 .seperation-bar-text h1 {
     color: white;
-
 }
 
 
