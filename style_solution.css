@@ -5,6 +5,7 @@
     --clr-primary-hover: #932432;
     --clr-background-nav: #e7e7e7;
     --clr-background-seperation: lightblue;
+    --clr-light-grey: #cdcdcd;
     --border-radius: 0.5rem;
     --font-size-p: 1rem;
     --font-size-h1: 2.5rem;
@@ -80,10 +81,13 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .tech-explainer {
-    margin: 2rem 2rem 0rem 2rem;
+    margin: 2rem 1rem 2rem 1rem;
+    padding: 2rem;
     flex: 1;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 14px 28px var(--clr-light-grey);
+    border-radius: 0.8em;
 }
 
 .tech-explainer .tech-img {
@@ -126,6 +130,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 0 -9999rem;
     /* add back section padding value */
     padding: 0.25rem 9999rem;
+    box-shadow: 0 14px 28px var(--clr-light-grey);
 }
 
 .container-b {
@@ -143,34 +148,39 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 /* =========Section C=============== */
 
 .section-c {
-    margin-top: 4rem;
+    max-width: 1440px;
+    margin: 4rem 0rem 2rem 0rem;
 }
 
 .container-c {
-    margin: 0rem 0rem 14rem 0rem;
+    margin: 2rem 0rem 8rem 0rem;
     color: black;
 }
 
 .tracking-wrapper {
     display: flex;
     justify-content: space-around;
-    margin: 0rem;
+    margin: 2rem 0rem 0rem 0rem;
     align-items: center;
 }
 
 .tracking-explainer {
-    margin: 2rem 2rem rem 2rem;
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 2rem;
     width: 400px;
+    box-shadow: 0 14px 28px var(--clr-light-grey);
+    border-radius: 0.8em;
 }
 
 .tracking-explainer .tracking-img {
     max-height: 100%;
     max-width: 100%;
+    margin-bottom: 2rem;
 }
 
 .tracking-explainer h3 {
     font-size: var(--font-size-h3);
-    margin: 1rem 1rem;
+    margin-bottom: 1rem;
     font-weight: 100;
     color: black;
     text-align: center;
@@ -179,12 +189,61 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 .container-c p {
     font-size: 1.2rem; /* Needs larger than p */
     font-weight: 100;
-    margin: 0rem 4rem 4rem 4rem;
+    margin: 0rem 4rem 2rem 4rem;
     color: black;
     text-align: center;
 }
 
-/* Section C END */
+/* ========================Section C END ======================== */
+
+/* =============== Section D =================== */
+.section-d {
+    margin: 0rem 2rem 0rem 2rem;
+    margin-bottom: 150px;
+}
+
+.container-tech-info {
+    align-items: center;
+}
+
+.container-tech-info .button-container {
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0rem 2rem 0rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #000000;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    background-color: var(--clr-primary);
+    text-align: center;
+    transition: all 0.15s;
+}
+.button:hover {
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    color: black;
+    border-color: #ffffff;
+}
+
+.tech-info-card {
+    margin: 0rem;
+    padding: 6rem;
+    box-shadow: 0 14px 28px var(--clr-light-grey);
+    border-radius: 0.8em;
+}
+
+/* ================== Section D END ===================== */
 
 @media only screen and (max-width: 1440px) {
     .tech-explainer {
