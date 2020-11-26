@@ -271,4 +271,14 @@ p {
         align-self: center;
         text-align: center;
     }
+    #nav-options {
+        width: 30%;
+    }
+    #nav-logo {
+        margin-right: 10%;
+        width: 60%;
+    }
+    #navbar-height {
+        height: 15em;
+    }
 }
