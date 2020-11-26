@@ -88,9 +88,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 #nav-logo {
     width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #nav-logo img {
@@ -408,5 +405,15 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     }
     #hero-placement {
         flex: wrap;
+    }
+    #nav-options {
+        width: 30%;
+    }
+    #nav-logo {
+        margin-right: 10%;
+        width: 60%;
+    }
+    #navbar-height {
+        height: 15em;
     }
 }

@@ -350,4 +350,15 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     }
 }
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+    #nav-options {
+        width: 30%;
+    }
+    #nav-logo {
+        margin-right: 10%;
+        width: 60%;
+    }
+    #navbar-height {
+        height: 15em;
+    }
+}
