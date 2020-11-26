@@ -329,10 +329,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
         width: 100%;
         /* move text bar - red box */
         margin: 20rem 0 20rem 0rem;
+        text-align: center;
     }
-    .hero-container {
-        flex-direction: column;
-    }
+    .hero-container {}
     .box-img {
         width: 100%;
     }
@@ -367,5 +366,27 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     }
     #hero-img {
         margin-bottom: 10rem;
+    }
+    .box-container {
+        text-align: center;
+    }
+    .box-spacing {
+        margin: 1em;
+    }
+    .box-spacing-health {
+        margin: 1em;
+    }
+    #the-tech-txt {
+        margin: 0 1em 5em 1em;
+    }
+    .button-placement {
+        justify-content: center;
+    }
+    #hero-img {
+        width: 90%;
+        margin-left: 2rem;
+    }
+    #hero-placement {
+        flex: wrap;
     }
 }
