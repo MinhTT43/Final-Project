@@ -159,6 +159,8 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     width: 45%;
     height: 50%;
     object-fit: contain;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 
 #hero-img img {
