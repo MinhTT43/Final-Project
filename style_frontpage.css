@@ -208,8 +208,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .seperation-bar-text {
+    width: 700px;
     color: white;
-    margin: 1.25em 0 2.5em 0;
+    margin: 2.5em 0 2.5em 0;
     text-align: center;
 }
 
