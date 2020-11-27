@@ -163,12 +163,23 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 .content-box-list {
     padding-left: 5.5rem;
+    width: 80%;
 }
 
 .content-box-width {
     width: 100%;
 }
 
+.content-box-width li {
+    margin: 0.15em 0 0.15em 2em;
+}
+
 .content-box-width h1 {
     text-align: center;
+}
+
+table.a {
+    width: 100%;
+    font-size: var(--font-size-h4);
+    border: 1px solid black;
 }
