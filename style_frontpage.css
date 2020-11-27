@@ -1,13 +1,13 @@
 :root {
     /* Variabler */
-    --clr-primary: #FF503F;
+    --clr-primary: #ff503f;
     --clr-secondary: #0e1e31;
     --clr-primary-hover: #932432;
     --clr-background-nav: #e7e7e7;
     --clr-background-seperation: lightblue;
     --border-radius: 0.2rem;
     --border-color: black;
-    --seperating-background-clr: #FEEAD2;
+    --seperating-background-clr: #feead2;
     /*  ----------------------- Font ---------------------*/
     --font-size-p: 1rem;
     --font-size-h1: 2.5rem;
@@ -88,6 +88,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 #nav-logo {
     width: 20%;
+    margin-left: 2.5%;
 }
 
 #nav-logo img {
@@ -96,7 +97,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 #nav-options {
-    width: 80%;
+    width: 77.5%;
 }
 
 #nav-options li {
@@ -113,6 +114,12 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 #nav-options a:hover {
     color: var(--font-hover);
+}
+
+#nav-spacing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
@@ -207,7 +214,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .seperation-bar-text {
-    width: 700px;
+    max-width: 700px;
     color: black;
     margin: 2.5em 0 2.5em 0;
     text-align: center;
@@ -224,11 +231,10 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 .box-container {
     width: 100%;
-    margin:0.5em 0;
+    margin: 0.5em 0;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    margin:  2em;
-
+    margin: 2em;
 }
 
 .box-spacing {
@@ -245,9 +251,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
     justify-content: center;
     margin: 2em;
-
 }
-
 
 .box-img img {
     height: 100%;
@@ -331,6 +335,24 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 0 5em 5em 5em;
 }
 
+
+/* =================================================================================================
+---------------------------------------------- Footer ---------------------------------------------
+==================================================================================================*/
+
+footer {
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kilder-dokumentasjon {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
 @media only screen and (max-width: 1200px) {
     .box-img-health {
         flex-direction: column;
@@ -349,8 +371,8 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     #nav-options a {
         font-size: var(--font-size-h4);
     }
-    .box-container{
-        margin:  2em;
+    .box-container {
+        margin: 2em;
         padding: 1em;
     }
 }
@@ -393,7 +415,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
         margin-bottom: 2rem;
         margin-top: 10rem;
     }
-
     .button-placement {
         margin: 0;
     }
@@ -402,7 +423,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     }
     .box-container {
         text-align: center;
-        margin:  2em;
+        margin: 2em;
     }
     .box-spacing {
         margin: 1em;
@@ -424,13 +445,21 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
         flex: wrap;
     }
     #nav-options {
-        width: 30%;
+        min-width: 165px;
+        max-width: 165px;
     }
     #nav-logo {
-        margin-right: 10%;
-        width: 60%;
+        width: 40%;
     }
     #navbar-height {
         height: 15em;
+    }
+    #nav-spacing {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .seperation-bar-text {
+        margin: 2.5em 2.5em 2.5em 2.5em;
     }
 }

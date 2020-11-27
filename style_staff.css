@@ -64,6 +64,12 @@ p {
     width: auto;
 }
 
+#nav-spacing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 /* =================================================================================================
 ---------------------------------------------- Nav bar ---------------------------------------------
@@ -86,9 +92,7 @@ p {
 
 #nav-logo {
     width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 2.5%;
 }
 
 #nav-logo img {
@@ -97,7 +101,7 @@ p {
 }
 
 #nav-options {
-    width: 80%;
+    width: 77.5%;
 }
 
 #nav-options li {
@@ -114,6 +118,13 @@ p {
 
 #nav-options a:hover {
     color: var(--font-hover);
+}
+
+#nav-spacing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
 }
 
 
