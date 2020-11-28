@@ -1,18 +1,28 @@
 :root {
     /* Variabler */
-    --clr-primary: #ff6584;
+    --clr-light-grey: #cdcdcd;
+    --clr-primary: #ff503f;
     --clr-secondary: #0e1e31;
     --clr-primary-hover: #932432;
     --clr-background-nav: #e7e7e7;
-    --clr-background-seperation: lightblue;
-    --clr-light-grey: #cdcdcd;
-    --border-radius: 0.5rem;
+    --clr-background-seperation: #02304A;
+    --clr-background-button: #3e2028;
+    --clr-logo: #c8aa8a;
+    --border-radius: 0.2rem;
+    --border-color: black;
+    --seperating-text-clr: #3e2028;
+    --seperating-background-clr: #feead2;
+    /*  ----------------------- Font ---------------------*/
     --font-size-p: 1rem;
     --font-size-h1: 2.5rem;
     --font-size-h2: 2rem;
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
     --line-height: 1.7em;
+    --font-color-main: #3e2028;
+    --font-color-secondary: #8f3a60;
+    --font-hover: black;
+    --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
 }
 
 
@@ -137,7 +147,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .tech-wrapper {
-    margin: 8rem 0rem;
+    margin: 1rem 0rem;
     display: flex;
 }
 
@@ -233,13 +243,23 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 2rem 2rem 0rem 2rem;
     padding: 2rem;
     width: 400px;
-    box-shadow: 0 14px 28px var(--clr-light-grey);
     border-radius: 0.8em;
 }
 
 .tracking-explainer .tracking-img {
     max-height: 100%;
     max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.tracking-explainer-container {
+    box-shadow: 0 14px 28px var(--clr-light-grey);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tracking-explainer-txt {
     margin-bottom: 2rem;
 }
 
