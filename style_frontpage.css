@@ -1,6 +1,6 @@
 :root {
     /* Variabler */
-    --clr-primary: #8F3A60;
+    --clr-primary: #8f3a60;
     --clr-secondary: #0e1e31;
     --clr-primary-hover: #932432;
     --clr-background-nav: #e7e7e7;
@@ -212,7 +212,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 15em;
+    height: auto;
     box-shadow: var(--box-shadow);
     margin: 5em 0 5em 0;
 }
@@ -448,7 +448,7 @@ footer {
         text-align: center;
     }
     #navbar-height {
-        background-color: var(--clr-logo);
+        background-color: var(--clr-background-seperation);
         height: 8em;
     }
     #nav-logo {
@@ -461,13 +461,11 @@ footer {
     #nav-options a {
         font-size: var(--font-size-h5);
         line-height: 1.75rem;
-    }
-    #nav-options a {
-        color: black;
+        color: white;
         padding: 3px;
     }
     #nav-options a:hover {
-        color: white;
+        color: purple;
     }
     .box-img {
         width: auto;
@@ -530,8 +528,8 @@ footer {
         flex: wrap;
     }
     #nav-options {
-        min-width: 165px;
-        max-width: 165px;
+        min-width: 225px;
+        max-width: 200px;
     }
     #nav-spacing {
         display: flex;
@@ -542,7 +540,30 @@ footer {
         margin: 2.5em 2.5em 2.5em 2.5em;
     }
     #the-tech-container {
-        margin: 10px;
-        padding: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    #nav-options a {
+        font-size: var(--font-size-h2);
+    }
+    #nav-logo {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .button-placement {
+        flex-direction: column;
+    }
+    .the-tech-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-container {
+        margin: 10% 5% 10% 0;
+    }
+    .child-box-img-health-img {
+        height: 60%;
+        margin: 1% 1% 0 1%;
     }
 }
