@@ -252,7 +252,6 @@ section {
 }
 
 .box-container {
-    width: 100%;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     margin: 2em;
@@ -488,6 +487,12 @@ footer {
         max-width: 845px;
         display: flex;
         justify-content: space-between;
+    }
+    .box-img-placement {
+        height: 350px;
+    }
+    .child-box-img-health-img {
+        height: 80%;
     }
 }
 
