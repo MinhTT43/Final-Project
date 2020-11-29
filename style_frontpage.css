@@ -1,11 +1,12 @@
 :root {
     /* Variabler */
-    --clr-primary: #8f3a60;
+    --clr-primary: #02304a;
     --clr-secondary: #0e1e31;
     --clr-primary-hover: #8f3a60;
     --clr-background-nav: #e7e7e7;
-    --clr-background-seperation: #592039;
-    --clr-background-button: #8f3a60;
+    --clr-background-seperation: #02304a;
+    --clr-background-button: #02304a;
+    /*  #02304a */
     --clr-logo: #c8aa8a;
     --border-radius: 0.2rem;
     --border-color: black;
@@ -23,6 +24,7 @@
     --font-hover: black;
     --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
 }
+
 
 /*How to use var color: 
 background: var(--clr-primary);
@@ -59,6 +61,7 @@ p {
     padding-top: 2%;
 }
 
+
 /*  =================Container for max width================
 Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
@@ -71,6 +74,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
     width: auto;
 }
+
 
 /* =================================================================================================
 ---------------------------------------------- Nav bar ---------------------------------------------
@@ -123,6 +127,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
 }
 
+
 /* =================================================================================================
 ---------------------------------------------- Hero ---------------------------------------------
 ==================================================================================================*/
@@ -161,6 +166,10 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 5% 0 0 0;
 }
 
+.button-container {
+    margin: 5% 5% 5% 0;
+}
+
 #hero-img {
     width: 45%;
     height: 50%;
@@ -174,6 +183,26 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     max-height: 100%;
 }
 
+.button-container a {
+    text-decoration: none;
+    color: var(--clr-background-button);
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    border: solid var(--clr-background-button);
+    border-radius: var(--border-radius);
+}
+
+#button-right a {
+    /* Change background color for button*/
+    background: var(--clr-background-button);
+    color: white;
+}
+
+
 /* =================================================================================================
 ---------------------------------------------- Seperating bar ---------------------------------------------
 ==================================================================================================*/
@@ -186,6 +215,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     height: auto;
     background-color: var(--clr-background-seperation);
 }
+
 .seperation-bar-text h1 {
     color: var(--seperating-text-clr);
 }
@@ -200,6 +230,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 8em 0 8em 0;
     text-align: center;
 }
+
 
 /* =================================================================================================
 ---------------------------------------------- Box container ---------------------------------------------
@@ -291,6 +322,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 3% 3% 1% 3%;
 }
 
+
 /* =================================================================================================
 ---------------------------------------------- Horizon ---------------------------------------------
 ==================================================================================================*/
@@ -352,6 +384,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     color: var(--clr-background-button);
     font-weight: bold;
 }
+
 
 /* =================================================================================================
 ---------------------------------------------- Footer ---------------------------------------------
