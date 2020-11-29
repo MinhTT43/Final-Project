@@ -117,15 +117,17 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .content-box {
+    width: 90%;
     margin-left: 2em;
     margin-top: 2em;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 0 1em 0;
     border-radius: var(--border-radius);
     display: flex;
 }
 
 .content-box h1 {
     font-size: var(--font-size-h5);
+    width: 100%;
 }
 
 .content-box-heading {
