@@ -93,6 +93,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 #nav-logo {
     width: 20%;
+    height: 100%;
     margin-left: 2.5%;
 }
 
@@ -419,9 +420,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 footer {
     height: 5em;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: var(--clr-background-seperation);
+    background-color: white;
 }
 
 #kilder-dokumentasjon {
@@ -430,15 +431,31 @@ footer {
     height: 100%;
 }
 
+.footer-source {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
 .footer-source a {
     text-decoration: none;
-    color: white;
+    color: var(--clr-primary);
     padding: 10px;
 }
 
 .footer-source:hover a {
     text-decoration: none;
     color: black;
+}
+
+#footer-placement {
+    justify-content: center;
+}
+
+#placement-footer {
+    max-width: 845px;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -462,6 +479,11 @@ footer {
     .box-container {
         margin: 10px;
         padding: 20px;
+    }
+    #placement-footer {
+        max-width: 845px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
