@@ -122,6 +122,16 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     color: var(--font-hover);
 }
 
+#placement-container-reference {
+    display: flex;
+    width: 100%;
+}
+
+#reference-alignment {
+    width: 78%;
+    margin-left: auto;
+}
+
 #nav-spacing {
     display: flex;
     justify-content: space-evenly;
@@ -542,9 +552,6 @@ footer {
     #nav-logo {
         width: auto;
     }
-    #nav-logo {
-        width: auto;
-    }
     .box-txt {
         width: 100%;
         margin: 1em 0;
@@ -561,7 +568,6 @@ footer {
     .box-spacing {
         flex-direction: column;
     }
-    .child-box-img-health {}
     #hero-placement {
         flex-direction: column;
     }
@@ -604,6 +610,9 @@ footer {
     #the-tech-container {
         margin: 10px;
         padding: 20px;
+    }
+    .center-container-nav {
+        background-color: var(--clr-background-navtop);
     }
 }
 
