@@ -84,7 +84,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 .center-container-nav {
     flex-direction: row;
     display: flex;
-    justify-content: right;
+    justify-content: space-evenly;
     align-items: center;
     height: 7em;
 }
@@ -126,6 +126,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    max-width: 1440px;
 }
 
 
