@@ -81,13 +81,11 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 ---------------------------------------------- Nav bar ---------------------------------------------
 ==================================================================================================*/
 
-.center-container:first-of-type {
+.center-container-nav {
     flex-direction: row;
     display: flex;
     justify-content: right;
-}
-
-#navbar-height {
+    align-items: center;
     height: 7em;
 }
 
@@ -100,6 +98,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 #nav-logo img {
     max-width: 100%;
     max-height: 100%;
+    align-items: center;
     border-radius: var(--border-radius);
 }
 
@@ -247,9 +246,12 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 ---------------------------------------------- Box container ---------------------------------------------
 ==================================================================================================*/
 
+section {
+    margin: 0 1em 0 1em;
+}
+
 .box-container {
     width: 100%;
-    margin: 0.5em 0;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     margin: 2em;
@@ -348,7 +350,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .child-box-img-health-txt {
-    height: 1.3em;
+    height: auto;
     margin: 1%;
 }
 
@@ -608,10 +610,19 @@ footer {
         margin: 10% 5% 10% 0;
     }
     .child-box-img-health-img {
-        height: 60%;
-        margin: 1% 1% 0 1%;
+        height: auto;
+        margin: 1em 1em 0 1em;
     }
     #hero-txt-box h1 {
         font-size: var(--font-size-h2);
+    }
+    .box-img-placement {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .box-container {
+        text-align: center;
     }
 }
