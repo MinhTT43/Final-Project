@@ -511,7 +511,7 @@ footer {
         width: auto;
     }
     .box-img {
-        height: 500px;
+        height: 80vw;
         width: 100%;
         margin: auto;
     }
@@ -599,3 +599,5 @@ footer {
         font-size: var(--font-size-h2);
     }
 }
+
+v()
