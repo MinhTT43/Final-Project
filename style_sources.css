@@ -1,12 +1,17 @@
 :root {
     /* Variabler */
-    --clr-primary: black;
+    --clr-primary: #02304a;
     --clr-secondary: #0e1e31;
-    --clr-primary-hover: #932432;
+    --clr-primary-hover: #8f3a60;
     --clr-background-nav: #e7e7e7;
-    --clr-background-seperation: lightblue;
+    --clr-background-navtop: #305e77;
+    --clr-background-seperation: #02304a;
+    --clr-background-button: #02304a;
+    /*  #02304a */
+    --clr-logo: #c8aa8a;
     --border-radius: 0.2rem;
     --border-color: black;
+    --seperating-text-clr: white;
     --seperating-background-clr: #feead2;
     /*  ----------------------- Font ---------------------*/
     --font-size-p: 1rem;
@@ -14,11 +19,10 @@
     --font-size-h2: 2rem;
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
-    --font-size-h5: 1.25rem;
     --line-height: 1.7em;
-    --font-color-main: black;
+    --font-color-main: #3e2028;
     --font-color-secondary: #8f3a60;
-    --font-hover: pink;
+    --font-hover: black;
     --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -137,11 +141,25 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     color: var(--font-hover);
 }
 
+#placement-container-reference {
+    display: flex;
+    width: 100%;
+}
+
+#reference-alignment {
+    width: 78%;
+    margin-left: auto;
+}
+
 #nav-spacing {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     max-width: 1440px;
+}
+
+#oversikt {
+    height: auto;
 }
 
 #oversikt li {
@@ -152,6 +170,11 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     flex-direction: column;
 }
 
+#reference-alignment {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
 #oversikt a {
     font-size: var(--font-size-h4);
     line-height: 4rem;
@@ -160,13 +183,13 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .container {
-    width: 80%;
-    margin-left: 22%;
+    width: 78%;
+    margin-left: auto;
     height: auto;
     box-shadow: var(--box-shadow);
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .content-box {
@@ -187,12 +210,12 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     text-align: center;
     font-size: var(--font-size-h3);
     width: 100%;
+    margin: 2em;
 }
 
 .container-meeting {
-    width: 80%;
-    margin-left: 22%;
-    padding: 2em;
+    width: 78%;
+    margin-left: auto;
     height: auto;
     box-shadow: var(--box-shadow);
     display: flex;
@@ -201,12 +224,12 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .container-meeting p {
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-p);
 }
 
 .container-meeting li {
     margin-top: 1em;
-    font-size: var(--font-size-h4);
+    font-size: var(--font-size-p);
 }
 
 .content-box-list {
@@ -214,7 +237,8 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .content-box-width {
-    width: 100%;
+    width: auto;
+    margin: 2em;
 }
 
 .content-box-width li {
@@ -245,6 +269,69 @@ table.a {
         justify-content: center;
     }
     #oversikt {
-        height: 75vh;
+        height: auto;
+    }
+    #nav-options a {
+        font-size: var(--font-size-h4);
+    }
+    #oversikt {
+        max-width: 250px;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        position: none;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar-height {
+        background-color: var(--clr-background-navtop);
+        height: 11em;
+    }
+    #nav-logo img {
+        width: 350px;
+        border-radius: var(--border-radius);
+    }
+    #nav-options a {
+        font-size: var(--font-size-h5);
+        line-height: 1.75rem;
+        color: white;
+        padding: 3px;
+    }
+    #nav-options {
+        width: 50%;
+    }
+    #nav-options a:hover {
+        color: #3e2028;
+    }
+    #nav-spacing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    #nav-options li {
+        display: grid;
+    }
+    #nav-options a {
+        font-size: var(--font-size-h4);
+        padding: none;
+    }
+    #nav-logo {
+        width: auto;
+    }
+    #nav-logo {
+        width: auto;
+    }
+    #placement-container-reference {
+        flex-direction: row;
+    }
+    .container-meeting {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
     }
 }
