@@ -1,0 +1,617 @@
+:root {
+    /* Variabler */
+    --clr-primary: #02304a;
+    --clr-secondary: #0e1e31;
+    --clr-primary-hover: #8f3a60;
+    --clr-background-nav: #e7e7e7;
+    --clr-background-navtop: #305e77;
+    --clr-background-seperation: #02304a;
+    --clr-background-button: #02304a;
+    /*  #02304a */
+    --clr-logo: #c8aa8a;
+    --border-radius: 0.2rem;
+    --border-color: black;
+    --seperating-text-clr: white;
+    --seperating-background-clr: #feead2;
+    /*  ----------------------- Font ---------------------*/
+    --font-size-p: 1rem;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --line-height: 1.7em;
+    --font-color-main: #3e2028;
+    --font-color-secondary: #8f3a60;
+    --font-hover: black;
+    --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+/*How to use var color: 
+background: var(--clr-primary);
+*/
+
+html,
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    color: var(--clr-primary);
+}
+
+h2 {
+    font-size: var(--font-size-h1);
+}
+
+p {
+    font-size: var(--font-size-p);
+    line-height: 1.75rem;
+    padding-top: 2%;
+}
+
+
+/*  =================Container for max width================
+Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
+
+.center-container {
+    max-width: 1440px;
+    text-align: left;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+
+/* =================================================================================================
+---------------------------------------------- Nav bar ---------------------------------------------
+==================================================================================================*/
+
+.center-container:first-of-type {
+    flex-direction: row;
+    display: flex;
+    justify-content: right;
+}
+
+#navbar-height {
+    height: 7em;
+}
+
+#nav-logo {
+    width: 20%;
+    height: 100%;
+    margin-left: 2.5%;
+}
+
+#nav-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--border-radius);
+}
+
+#nav-options {
+    width: 77.5%;
+}
+
+#nav-options li {
+    text-align: right;
+    list-style-type: none;
+}
+
+#nav-options a {
+    text-decoration: none;
+    color: var(--font-main-color);
+    margin: 0 1em 0 1em;
+    font-size: 40px;
+}
+
+#nav-options a:hover {
+    color: var(--font-hover);
+}
+
+#nav-spacing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* =================================================================================================
+---------------------------------------------- Hero ---------------------------------------------
+==================================================================================================*/
+
+#hero-txt-box {
+    width: 30%;
+    height: 50%;
+    /* move text bar - red box */
+    margin-right: 5%;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+#hero-txt-box h1 {
+    font-size: var(--font-size-h1);
+    color: var(--clr-primary);
+}
+
+#hero-txt-align {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-placement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-placement {
+    width: auto;
+    display: flex;
+    height: auto;
+    text-align: center;
+    margin: 5% 0 0 0;
+}
+
+.button-container {
+    margin: 5% 5% 5% 0;
+}
+
+#hero-img {
+    width: 45%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+#hero-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button-container a {
+    text-decoration: none;
+    color: var(--clr-background-button);
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    border: solid var(--clr-background-button);
+    border-radius: var(--border-radius);
+}
+
+#button-right a {
+    /* Change background color for button*/
+    background: var(--clr-background-button);
+    color: white;
+}
+
+
+/* =================================================================================================
+---------------------------------------------- Seperating bar ---------------------------------------------
+==================================================================================================*/
+
+.seperation-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    background-color: var(--clr-background-seperation);
+}
+
+.seperation-bar-text h1 {
+    color: var(--seperating-text-clr);
+}
+
+.seperation-bar-text p {
+    font-size: 1.2em;
+}
+
+.seperation-bar-text {
+    max-width: 700px;
+    color: var(--seperating-text-clr);
+    margin: 8em 0 8em 0;
+    text-align: center;
+}
+
+.seperation-bar a {
+    text-decoration: none;
+    color: white;
+}
+
+.seperation-bar a:hover {
+    color: var(--clr-primary-hover);
+}
+
+
+/* =================================================================================================
+---------------------------------------------- Box container ---------------------------------------------
+==================================================================================================*/
+
+.box-container {
+    width: 100%;
+    margin: 0.5em 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin: 2em;
+}
+
+.box-spacing {
+    margin: 3em 2em 3em 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-img {
+    width: 30%;
+    /* Change height to change box width*/
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.box-img img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.img-2 {
+    height: 500px;
+}
+
+.box-txt {
+    width: 65%;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-txt a {
+    text-decoration: none;
+    color: black;
+}
+
+.box-txt a:hover {
+    color: var(--clr-primary-hover);
+}
+
+.box-txt ul li {
+    line-height: var(--line-height);
+}
+
+.box-spacing-health {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px 40px 20px;
+}
+
+.box-spacing-health a {
+    text-decoration: none;
+    color: black;
+}
+
+.box-spacing-health a:hover {
+    color: var(--clr-primary-hover);
+}
+
+.box-txt-mental-health {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.box-img-health {
+    width: 100%;
+    display: flex;
+}
+
+.box-img-health .box-img-placement {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.child-box-img-health {
+    width: 50%;
+    padding: 10px;
+}
+
+.child-box-img-health-img {
+    height: 50%;
+    margin: 1%;
+}
+
+.child-box-img-health-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.child-box-img-health-txt {
+    height: 1.3em;
+    margin: 1%;
+}
+
+
+/* =================================================================================================
+---------------------------------------------- Horizon ---------------------------------------------
+==================================================================================================*/
+
+#the-tech-container {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    margin: 2.5em 2.5em 2.5em 2.5em;
+}
+
+#the-tech-img {
+    margin: 5em 0 2.5em 0;
+    display: flex;
+    justify-content: center;
+}
+
+#the-tech-img img {
+    max-width: 100%;
+    max-height: 30em;
+}
+
+#the-tech-txt {
+    margin: 5em;
+}
+
+.the-tech-img img {
+    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+}
+
+.the-tech-buttons {
+    display: flex;
+    align-content: left;
+    justify-content: left;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tech-button {
+    width: 150px;
+    padding: 10px 2px 10px 2px;
+    border: solid var(--clr-background-button);
+    border-radius: var(--border-radius);
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.button-one {
+    background-color: var(--clr-background-button);
+}
+
+.tech-button a {
+    text-decoration: none;
+    padding: 10px 2px 10px 2px;
+    background-color: var(--clr-background-);
+    color: var(--clr-background-button);
+}
+
+
+/* =================================================================================================
+---------------------------------------------- Footer ---------------------------------------------
+==================================================================================================*/
+
+footer {
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#kilder-dokumentasjon {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-source {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-source a {
+    text-decoration: none;
+    color: var(--clr-primary);
+    padding: 10px;
+}
+
+.footer-source:hover a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-placement {
+    justify-content: center;
+}
+
+#placement-footer {
+    max-width: 845px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+    .box-img-health {
+        flex-direction: column;
+    }
+    #hero-img {
+        width: 45%;
+        min-width: 400px;
+        margin-right: 2rem;
+        align-content: center;
+        object-fit: cover;
+    }
+    #hero-txt-box {
+        width: 49%;
+        margin-left: 2rem;
+    }
+    #nav-options a {
+        font-size: var(--font-size-h4);
+    }
+    .box-container {
+        margin: 10px;
+        padding: 20px;
+    }
+    #placement-footer {
+        max-width: 845px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #hero-txt-box {
+        width: 100%;
+        /* move text bar - red box */
+        margin: 20rem 0 20rem 0rem;
+        text-align: center;
+    }
+    .box-img img {
+        border-radius: var(--border-radius);
+    }
+    #navbar-height {
+        background-color: var(--clr-background-navtop);
+        height: 11em;
+    }
+    #nav-logo img {
+        width: 350px;
+        border-radius: var(--border-radius);
+    }
+    #nav-options a {
+        font-size: var(--font-size-h5);
+        line-height: 1.75rem;
+        color: white;
+        padding: 3px;
+    }
+    #nav-options {
+        width: 50%;
+    }
+    #nav-options a:hover {
+        color: #3e2028;
+    }
+    #nav-spacing {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    #nav-options li {
+        display: grid;
+    }
+    #nav-options a {
+        font-size: var(--font-size-h4);
+        padding: none;
+    }
+    #nav-logo {
+        width: auto;
+    }
+    #nav-logo {
+        width: auto;
+    }
+    .box-txt {
+        width: 100%;
+        margin: 1em 0;
+    }
+    .box-img-health {
+        width: 100%;
+    }
+    .box-img {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: unset;
+    }
+    .box-spacing {
+        flex-direction: column;
+    }
+    .child-box-img-health {}
+    #hero-placement {
+        flex-direction: column;
+    }
+    #hero-txt-box {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        margin-top: 5rem;
+    }
+    #hero-img {
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    .box-container {
+        text-align: left;
+        margin: 10px;
+        padding: 20px;
+    }
+    .box-spacing {
+        margin: 1em;
+    }
+    #the-tech-txt {
+        margin: 1em;
+    }
+    .button-placement {
+        justify-content: center;
+        margin: 0;
+        margin: 20px;
+    }
+    #hero-img {
+        width: 90%;
+        margin-left: 2rem;
+    }
+    #hero-placement {
+        flex: wrap;
+    }
+    .seperation-bar-text {
+        margin: 2.5em 2.5em 2.5em 2.5em;
+    }
+    #the-tech-container {
+        margin: 10px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .the-tech-buttons {
+        flex-direction: i;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .button-container {
+        margin: 10% 5% 10% 0;
+    }
+    .child-box-img-health-img {
+        height: 60%;
+        margin: 1% 1% 0 1%;
+    }
+    #hero-txt-box h1 {
+        font-size: var(--font-size-h2);
+    }
+}
