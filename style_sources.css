@@ -113,6 +113,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .content-box {
@@ -125,10 +126,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 .content-box h1 {
     font-size: var(--font-size-h5);
-}
-
-.src-number {
-    width: 5%;
 }
 
 .content-box-heading {
@@ -158,7 +155,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .content-box-list {
-    padding-left: 5.5rem;
     width: 80%;
 }
 
@@ -167,7 +163,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .content-box-width li {
-    margin: 0.15em 0 0.15em 2em;
+    margin: 0.15em 0 0.15em 0em;
 }
 
 .content-box-width h1 {
