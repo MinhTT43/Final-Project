@@ -34,7 +34,6 @@
     --margin-sep: 2rem 1rem 2rem 1rem;
 }
 
-
 /*How to use var color: 
 background: var(--clr-primary);
 */
@@ -42,7 +41,7 @@ background: var(--clr-primary);
 html,
 body {
     font-family: "Lexend Deca", sans-serif;
-    font-size: 16px;
+    /* font-size: 20px; */
     background-color: white;
     margin: 0 auto;
     float: none;
@@ -69,7 +68,6 @@ p {
     padding-top: 2%;
 }
 
-
 /*  =================Container for max width================
 
 Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
@@ -84,14 +82,11 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     width: auto;
 }
 
-
 /* ====================== Nav START ============================*/
-
 
 /* =================================================================================================
 ---------------------------------------------- Nav bar ---------------------------------------------
 ==================================================================================================*/
-
 
 /* .center-container:first-of-type {
     flex-direction: row;
@@ -141,9 +136,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
 } */
 
-
 /* =========================== Nav END ============================================ */
-
 
 /* =============Section A============= */
 
@@ -202,9 +195,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     padding-top: 2%;
 }
 
-
 /* ===============Section A END=========== */
-
 
 /* ==============Section B============== */
 
@@ -228,9 +219,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     font-size: 2rem;
 }
 
-
 /* ===========Section B END=========== */
-
 
 /* =========Section C=============== */
 
@@ -283,9 +272,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     text-align: center;
 }
 
-
 /* ========================Section C END ======================== */
-
 
 /* =============== Section D =================== */
 
@@ -326,8 +313,8 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     text-align: center;
 }
 
-.container-tech-info .button-container {}
-
+.container-tech-info .button-container {
+}
 
 /* .button-container {
     display: flex;
@@ -362,7 +349,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
     text-align: center;
 }
-
 
 /* .button {
     display: inline-block;
@@ -406,7 +392,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     background-color: var(--clr-background-);
     color: var(--clr-background-button);
 }
-
 
 /* ================== Section D END ===================== */
 
