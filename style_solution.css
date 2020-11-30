@@ -62,6 +62,10 @@ h2 {
     font-size: var(--font-size-h2);
 }
 
+h3 {
+    font-size: (--font-size-h3);
+}
+
 p {
     font-size: var(--font-size-p);
     line-height: 1.75rem;
@@ -141,12 +145,12 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 /* =============Section A============= */
 
 .container-a {
-    margin: 4rem 4rem 2rem 4rem;
+    margin: 6rem 4rem 2rem 4rem;
     color: black;
 }
 
 .heading-a {
-    font-size: var(--font-size-h1);
+    /* font-size: var(--font-size-h1); */
     color: var(--clr-primary);
     text-align: center;
 }

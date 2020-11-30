@@ -108,7 +108,7 @@ p {
     margin: 4rem 2rem 2rem 2rem;
 }
 
-.staff-text h2 {
+.staff-text h1 {
     color: var(--clr-primary);
 }
 
@@ -337,7 +337,7 @@ p {
         margin: var(--margin-value-800);
     }
     .container-contact {
-        margin: var(--margin-contact-800);
+        margin: 2rem;
     }
 }
 

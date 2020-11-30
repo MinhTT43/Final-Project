@@ -1,5 +1,10 @@
 :root {
     /* Setting color variables */
+    --clr-primary: #02304a;
+    --clr-secondary: #0e1e31;
+    --clr-primary-hover: #8f3a60;
+
+    /* Original variables */
     --clr-background: #ffffff;
     --clr-darkblue: #2f455d;
     --clr-pink: #02304a;
@@ -40,7 +45,21 @@ main {
 }
 
 h1 {
-    text-align: center;
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-size: (--font-size-h3);
+}
+
+p {
+    font-size: var(--font-size-p);
+    line-height: 1.75rem;
+    padding-top: 2%;
 }
 
 .align-center {
@@ -54,7 +73,6 @@ h1 {
     justify-content: center;
     flex-direction: column;
 }
-
 
 /*++++++++++++ Wrapper and container ++++++++++++*/
 
@@ -78,19 +96,18 @@ h1 {
     color: var(--clr-darkblue);
 }
 
-
 /*------------ Wrapper and container ------------*/
 
 .container-description {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .container-description h1 {
-    color: var(--clr-darkblue);
+    color: var(--clr-primary);
     margin-bottom: 1em;
-    font-size: 60px;
 }
 
 .container-description h2 {
