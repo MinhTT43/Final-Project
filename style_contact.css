@@ -2,7 +2,7 @@
     /* Setting color variables */
     --clr-background: #ffffff;
     --clr-darkblue: #2f455d;
-    --clr-pink: #ff6584;
+    --clr-pink: #02304a;
     --clr-lightgray: #d1d1d1;
     --border-radius: 4px;
     --font-size-p: 1rem;
@@ -13,6 +13,10 @@
     --line-height: 1.7em;
     --clr-background-navtop: #305e77;
     --clr-background-seperation: #02304a;
+    /* Margin 1200*/
+    --margin-map-1200: 2rem 5rem 0 5rem;
+    /* Margin 800*/
+    --margin-map-800: 2rem 1rem 0 1rem;
 }
 
 * {
@@ -48,9 +52,6 @@ h1 {
     display: flex;
     justify-content: right;
     align-items: center;
-}
-
-#navbar-height {
     height: 7em;
 }
 
@@ -247,7 +248,7 @@ footer {
 
 .footer-source a {
     text-decoration: none;
-    color: var(--clr-primary);
+    color: var(--clr-pink);
     padding: 10px;
 }
 
@@ -283,6 +284,9 @@ footer {
         margin-bottom: 1em;
         font-size: var(--font-size-h1);
     }
+    .map-container {
+        margin: var(--margin-map-1200);
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -296,7 +300,7 @@ footer {
     }
     .map-container {
         max-width: auto;
-        margin: 1rem 1rem 1rem 1rem;
+        margin: var(--margin-map-800);
         align-self: center;
         text-align: center;
     }

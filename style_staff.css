@@ -22,6 +22,12 @@
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
     --line-height: 1.7em;
+    /* Margin 1200*/
+    --margin-value-1200: 1rem;
+    --margin-contact-1200: 1rem;
+    /* Margin 800*/
+    --margin-value-800: 5rem;
+    --margin-contact-800: 5rem;
 }
 
 
@@ -300,6 +306,12 @@ p {
         margin: 10px;
         padding: 20px;
     }
+    .section-values {
+        margin: var(--margin-value-1200);
+    }
+    .container-contact {
+        margin: var(--margin-contact-1200);
+    }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -332,23 +344,19 @@ p {
         margin: 0rem;
         padding: 0rem;
     }
-    /* Changes */
-    .staff-text p {
-        margin: 1em;
+    .section-values {
+        margin: var(--margin-value-800);
     }
+    .container-contact {
+        margin: var(--margin-contact-800);
+    }
+}
+
+@media only screen and (max-width: 900px) {
     .section-values {
         flex-direction: column;
     }
-    .section-values {
-        margin: 1em;
-    }
-    .profile {
-        margin: 1em 0;
-    }
-    .profile-wrapper {
-        margin: 1em;
-    }
-    .container-contact {
+    .staff-text p {
         margin: 1em;
     }
 }

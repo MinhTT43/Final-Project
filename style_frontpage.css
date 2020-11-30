@@ -24,7 +24,10 @@
     --font-color-secondary: #8f3a60;
     --font-hover: black;
     --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
-    --margin: 1em;
+    /* Margin 1200*/
+    --margin: 5rem;
+    /* Margin 800*/
+    --margin-800: 1rem;
 }
 
 
@@ -195,9 +198,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 ---------------------------------------------- Box container ---------------------------------------------
 ==================================================================================================*/
 
-.section-marg {
-    margin: 0 1em 0 1em;
-}
+.section-marg {}
 
 .box-container {
     border-radius: var(--border-radius);
@@ -307,13 +308,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 /* =================================================================================================
 ---------------------------------------------- Horizon ---------------------------------------------
 ==================================================================================================*/
-
-#the-tech-container {
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    width: 100%;
-    margin: 2.5em 2.5em 2.5em 2.5em;
-}
 
 #the-tech-img {
     margin: 5em 0 2.5em 0;
@@ -430,17 +424,21 @@ footer {
         width: 49%;
         margin-left: 2rem;
     }
-    #nav-options a {
-        font-size: var(--font-size-h4);
-    }
     .box-container {
         margin: var(--margin);
         padding: 20px;
     }
-    #placement-footer {
-        max-width: 845px;
+    .box-spacing {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+    }
+    .box-img {
+        width: 100%;
+        margin: 0;
+    }
+    .box-txt {
+        width: 100%;
+        margin: 0;
     }
     .box-img-placement {
         height: 350px;
@@ -462,6 +460,10 @@ footer {
         /* move text bar - red box */
         margin: 20rem 0 20rem 0rem;
         text-align: center;
+    }
+    .box-container {
+        margin: var(--margin-800);
+        padding: 20px;
     }
     .box-img img {
         border-radius: var(--border-radius);
@@ -497,7 +499,7 @@ footer {
     }
     .box-container {
         text-align: left;
-        margin: var(--margin);
+        margin: var(--margin-800);
         padding: 20px;
     }
     .box-spacing {

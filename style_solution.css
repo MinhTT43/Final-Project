@@ -7,13 +7,11 @@
     --clr-background-navtop: #305e77;
     --clr-background-seperation: #02304a;
     --clr-background-button: #02304a;
-
     --clr-logo: #c8aa8a;
     --border-radius: 0.2rem;
     --border-color: black;
     --seperating-text-clr: white;
     --seperating-background-clr: #feead2;
-
     --clr-body: white;
     --clr-background-nav: antiquewhite;
     --clr-background-button: #2f455d;
@@ -24,7 +22,16 @@
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
     --line-height: 1.7em;
+    /* Margins 1200px */
+    --margin-tracking-explainer: 2rem 4rem 0rem 5rem;
+    --margin-tech-explainer: 2rem 5rem 0rem 5rem;
+    --margin-tech-info: 0rem 5rem 2rem 5rem;
+    /* Margins 800px */
+    --margin-tracking-explainer-800: 2rem 1rem 0rem 1rem;
+    --margin-tech-explainer-800: 2rem 1rem 0rem 1rem;
+    --margin-tech-info-800: 0rem 1rem 2rem 1rem;
 }
+
 
 /*How to use var color: 
 background: var(--clr-primary);
@@ -60,6 +67,7 @@ p {
     padding-top: 2%;
 }
 
+
 /*  =================Container for max width================
 
 Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
@@ -74,10 +82,14 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     width: auto;
 }
 
+
 /* ====================== Nav START ============================*/
+
+
 /* =================================================================================================
 ---------------------------------------------- Nav bar ---------------------------------------------
 ==================================================================================================*/
+
 
 /* .center-container:first-of-type {
     flex-direction: row;
@@ -127,11 +139,14 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
 } */
 
+
 /* =========================== Nav END ============================================ */
 
+
 /* =============Section A============= */
+
 .container-a {
-    margin: 4rem 2rem 2rem 2rem;
+    margin: 4rem 4rem 2rem 4rem;
     color: black;
 }
 
@@ -185,7 +200,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     padding-top: 2%;
 }
 
+
 /* ===============Section A END=========== */
+
 
 /* ==============Section B============== */
 
@@ -209,7 +226,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     font-size: 2rem;
 }
 
+
 /* ===========Section B END=========== */
+
 
 /* =========Section C=============== */
 
@@ -231,7 +250,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .tracking-explainer {
-    margin: 2rem 2rem 0rem 2rem;
+    margin: var(--margin-tracking-explainer);
     padding: 2rem;
     width: 400px;
     box-shadow: 0 14px 28px var(--clr-light-grey);
@@ -254,16 +273,20 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .container-c p {
-    font-size: 1.2rem; /* Needs larger than p */
+    font-size: 1.2rem;
+    /* Needs larger than p */
     font-weight: 100;
     margin: 0rem 4rem 2rem 4rem;
     color: black;
     text-align: center;
 }
 
+
 /* ========================Section C END ======================== */
 
+
 /* =============== Section D =================== */
+
 .section-d {
     margin: 0rem 2rem 4rem 2rem;
 }
@@ -301,8 +324,8 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     text-align: center;
 }
 
-.container-tech-info .button-container {
-}
+.container-tech-info .button-container {}
+
 
 /* .button-container {
     display: flex;
@@ -337,6 +360,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
     text-align: center;
 }
+
 
 /* .button {
     display: inline-block;
@@ -381,34 +405,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     color: var(--clr-background-button);
 }
 
-/* =================================================================================================
----------------------------------------------- Footer ---------------------------------------------
-==================================================================================================*/
-
-footer {
-    height: 5em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--clr-background-seperation);
-}
-
-#kilder-dokumentasjon {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-
-.footer-source a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-.footer-source:hover a {
-    text-decoration: none;
-    color: black;
-}
 
 /* ================== Section D END ===================== */
 
@@ -416,9 +412,12 @@ footer {
     .tech-explainer {
         width: auto;
     }
-
     .tracking-explainer {
         width: auto;
+    }
+    .container-a {
+        margin: 0rem;
+        color: black;
     }
 }
 
@@ -430,14 +429,12 @@ footer {
         justify-content: center;
         width: auto;
     }
-
     .tech-wrapper {
         flex-direction: column;
         width: auto;
         justify-content: center;
         align-items: center;
     }
-
     .tracking-wrapper {
         flex-direction: column;
         width: auto;
@@ -446,15 +443,39 @@ footer {
         width: auto;
         justify-content: center;
         align-items: center;
+        margin: var(--margin-tech-explainer);
     }
-
     .tracking-explainer {
         width: auto;
+    }
+    .section-c {
+        margin: 0;
+    }
+    .section-d {
+        margin: 0;
+    }
+    .container-tech-info {
+        margin: var(--margin-tech-info);
     }
 }
 
 @media only screen and (max-width: 800px) {
     .container-tech-info {
         flex-direction: column;
+    }
+    .tech-explainer {
+        margin: var(--margin-tech-explainer-800);
+    }
+    .tracking-explainer {
+        margin: var(--margin-tracking-explainer-800);
+    }
+    .container-a {
+        margin: 5rem 0;
+    }
+    .container-tech-info {
+        margin: 0;
+    }
+    .section-d {
+        margin: var(--margin-tech-info-800);
     }
 }
