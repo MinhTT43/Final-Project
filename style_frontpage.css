@@ -24,6 +24,7 @@
     --font-color-secondary: #8f3a60;
     --font-hover: black;
     --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
+    --margin: 1em;
 }
 
 
@@ -69,64 +70,11 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 .center-container {
     max-width: 1440px;
     text-align: left;
-    margin: 0px auto;
+    margin: 1em auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
-}
-
-
-/* =================================================================================================
----------------------------------------------- Nav bar ---------------------------------------------
-==================================================================================================*/
-
-.center-container:first-of-type {
-    flex-direction: row;
-    display: flex;
-    justify-content: right;
-}
-
-#navbar-height {
-    height: 7em;
-}
-
-#nav-logo {
-    width: 20%;
-    height: 100%;
-    margin-left: 2.5%;
-}
-
-#nav-logo img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: var(--border-radius);
-}
-
-#nav-options {
-    width: 77.5%;
-}
-
-#nav-options li {
-    text-align: right;
-    list-style-type: none;
-}
-
-#nav-options a {
-    text-decoration: none;
-    color: var(--font-main-color);
-    margin: 0 1em 0 1em;
-    font-size: 40px;
-}
-
-#nav-options a:hover {
-    color: var(--font-hover);
-}
-
-#nav-spacing {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 
@@ -252,7 +200,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 0.5em 0;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    margin: 2em;
 }
 
 .box-spacing {
@@ -348,7 +295,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .child-box-img-health-txt {
-    height: 1.3em;
+    height: auto;
     margin: 1%;
 }
 
@@ -458,6 +405,12 @@ footer {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 1440px) {
+    .box-container {
+        margin: 1em;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .box-img-health {
         flex-direction: column;
@@ -477,13 +430,25 @@ footer {
         font-size: var(--font-size-h4);
     }
     .box-container {
-        margin: 10px;
+        margin: var(--margin);
         padding: 20px;
     }
     #placement-footer {
         max-width: 845px;
         display: flex;
         justify-content: space-between;
+    }
+    .box-img-placement {
+        height: 350px;
+    }
+    .child-box-img-health-img {
+        height: 80%;
+    }
+    #the-tech-txt {
+        margin: 2em;
+    }
+    #the-tech-container {
+        margin: 1em;
     }
 }
 
@@ -496,45 +461,6 @@ footer {
     }
     .box-img img {
         border-radius: var(--border-radius);
-    }
-    #navbar-height {
-        background-color: var(--clr-background-navtop);
-        height: 11em;
-    }
-    #nav-logo img {
-        width: 350px;
-        border-radius: var(--border-radius);
-    }
-    #nav-options a {
-        font-size: var(--font-size-h5);
-        line-height: 1.75rem;
-        color: white;
-        padding: 3px;
-    }
-    #nav-options {
-        width: 50%;
-    }
-    #nav-options a:hover {
-        color: #3e2028;
-    }
-    #nav-spacing {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    #nav-options li {
-        display: grid;
-    }
-    #nav-options a {
-        font-size: var(--font-size-h4);
-        padding: none;
-    }
-    #nav-logo {
-        width: auto;
-    }
-    #nav-logo {
-        width: auto;
     }
     .box-txt {
         width: 100%;
@@ -552,7 +478,6 @@ footer {
     .box-spacing {
         flex-direction: column;
     }
-    .child-box-img-health {}
     #hero-placement {
         flex-direction: column;
     }
@@ -568,11 +493,16 @@ footer {
     }
     .box-container {
         text-align: left;
-        margin: 10px;
+        margin: var(--margin);
         padding: 20px;
     }
     .box-spacing {
         margin: 1em;
+    }
+    .box-img-placement {
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
     #the-tech-txt {
         margin: 1em;
@@ -608,10 +538,19 @@ footer {
         margin: 10% 5% 10% 0;
     }
     .child-box-img-health-img {
-        height: 60%;
-        margin: 1% 1% 0 1%;
+        height: auto;
+        margin: 1em 1em 0 1em;
     }
     #hero-txt-box h1 {
         font-size: var(--font-size-h2);
+    }
+    .box-img-placement {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .box-container {
+        text-align: center;
     }
 }

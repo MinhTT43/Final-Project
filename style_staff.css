@@ -7,13 +7,11 @@
     --clr-background-navtop: #305e77;
     --clr-background-seperation: #02304a;
     --clr-background-button: #02304a;
-
     --clr-logo: #c8aa8a;
     --border-radius: 0.2rem;
     --border-color: black;
     --seperating-text-clr: white;
     --seperating-background-clr: #feead2;
-
     --clr-body: white;
     --clr-background-nav: antiquewhite;
     --clr-background-button: #2f455d;
@@ -25,6 +23,7 @@
     --font-size-h4: 1.5rem;
     --line-height: 1.7em;
 }
+
 
 /*How to use var color: 
 background: var(--clr-primary);
@@ -64,43 +63,6 @@ p {
     padding-top: 2%;
 }
 
-/*========================================================================================== 
-=================================NAVIGATION BAR=============================================
-========================================================================================== */
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10vh;
-}
-
-#nav-img img {
-    height: 100px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#nav-options {
-    width: 1200px;
-}
-
-#nav-options li {
-    text-align: right;
-    list-style-type: none;
-}
-
-#nav-options a {
-    text-decoration: none;
-    font-size: var(--font-size-h4);
-    padding: 0 30px 0 30px;
-    color: #2f455d;
-    transition: 0.3s;
-}
-
-#nav-options a:hover {
-    color: #ff6584;
-}
 
 /* Center Container to hold all later content*/
 
@@ -113,6 +75,7 @@ nav {
     align-items: center;
     width: auto;
 }
+
 
 /* ===================== Section A ======================== */
 
@@ -150,7 +113,9 @@ nav {
     margin: 2rem 12rem 2rem 12rem;
 }
 
+
 /* ==================== Section A END ========================== */
+
 
 /* ==================== Section Values Start ==================== */
 
@@ -167,6 +132,7 @@ nav {
     margin: 2rem;
     flex-wrap: wrap;
 }
+
 .number-container {
     /* flex: 1; */
 }
@@ -192,7 +158,9 @@ nav {
     text-align: center;
 }
 
+
 /* =================== Section Values END */
+
 
 /* ==================== Section B ==================== */
 
@@ -243,6 +211,7 @@ nav {
     text-align: center;
 }
 
+
 /* ===================== Section D ===================== */
 
 .container-contact {
@@ -258,6 +227,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 
 /* .button {
     display: inline-block;
@@ -302,38 +272,11 @@ nav {
     color: var(--clr-background-button);
 }
 
+
 /* ================= Section D END ================ */
 
+
 /* ======================= Section B END ========================== */
-
-/* =================================================================================================
----------------------------------------------- Footer ---------------------------------------------
-==================================================================================================*/
-
-footer {
-    height: 5em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--clr-background-seperation);
-}
-
-#kilder-dokumentasjon {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-
-.footer-source a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-.footer-source:hover a {
-    text-decoration: none;
-    color: black;
-}
 
 @media only screen and (max-width: 1200px) {
     .box-img-health {
@@ -363,13 +306,11 @@ footer {
     .section-a img {
         width: auto;
     }
-
     .profile {
         max-width: 300px;
         padding: 2rem;
         margin: 1rem;
     }
-
     .staff-text {
         width: auto;
     }
@@ -383,14 +324,31 @@ footer {
         text-align: center;
         padding: 0rem;
     }
-
     .container-heading {
         margin: 0rem;
         padding: 0rem;
     }
-
     .section-a {
         margin: 0rem;
         padding: 0rem;
+    }
+    /* Changes */
+    .staff-text p {
+        margin: 1em;
+    }
+    .section-values {
+        flex-direction: column;
+    }
+    .section-values {
+        margin: 1em;
+    }
+    .profile {
+        margin: 1em 0;
+    }
+    .profile-wrapper {
+        margin: 1em;
+    }
+    .container-contact {
+        margin: 1em;
     }
 }
