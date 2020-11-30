@@ -30,6 +30,8 @@
     --margin-tracking-explainer-800: 2rem 1rem 0rem 1rem;
     --margin-tech-explainer-800: 2rem 1rem 0rem 1rem;
     --margin-tech-info-800: 0rem 1rem 2rem 1rem;
+    /* Margins 550*/
+    --margin-sep: 2rem 1rem 2rem 1rem;
 }
 
 
@@ -276,7 +278,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     font-size: 1.2rem;
     /* Needs larger than p */
     font-weight: 100;
-    margin: 0rem 4rem 2rem 4rem;
+    margin: var(--margin-tracking-explainer);
     color: black;
     text-align: center;
 }
@@ -477,5 +479,14 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     }
     .section-d {
         margin: var(--margin-tech-info-800);
+    }
+    .container-c p {
+        margin: var(--margin-tracking-explainer-800);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .container-b {
+        margin: var(--margin-sep);
     }
 }

@@ -551,7 +551,6 @@ footer {
     }
     .child-box-img-health-img {
         height: auto;
-        margin: 1em 1em 0 1em;
     }
     #hero-txt-box h1 {
         font-size: var(--font-size-h2);
@@ -563,12 +562,15 @@ footer {
         height: auto;
     }
     .box-container {
-        text-align: left;
+        text-align: center;
     }
     .the-tech-buttons {
         flex-direction: column;
     }
     .button-two {
         margin-top: 1em;
+    }
+    .child-box-img-health {
+        width: 100%;
     }
 }
