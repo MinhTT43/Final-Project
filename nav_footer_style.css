@@ -7,10 +7,12 @@
     display: flex;
     justify-content: right;
     align-items: center;
+    max-width: 1440px;
 }
 
 #navbar-height {
     height: 7em;
+    margin: auto;
 }
 
 #nav-logo {
