@@ -221,6 +221,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 5rem;
 }
 
 .container-meeting p {
