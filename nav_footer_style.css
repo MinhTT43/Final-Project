@@ -1,3 +1,30 @@
+:root {
+    /* Variabler */
+    --clr-primary: #02304a;
+    --clr-secondary: #0e1e31;
+    --clr-primary-hover: #8f3a60;
+    --clr-background-nav: #e7e7e7;
+    --clr-background-navtop: #305e77;
+    --clr-background-seperation: #02304a;
+    --clr-background-button: #02304a;
+    /*  #02304a */
+    --clr-logo: #c8aa8a;
+    --border-radius: 0.2rem;
+    --border-color: black;
+    --seperating-text-clr: white;
+    --seperating-background-clr: #feead2;
+    /*  ----------------------- Font ---------------------*/
+    --font-size-p: 1rem;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.75rem;
+    --font-size-h4: 1.5rem;
+    --line-height: 1.7em;
+    --font-color-main: #3e2028;
+    --font-color-secondary: #8f3a60;
+}
+
+
 /* =================================================================================================
 ---------------------------------------------- Nav bar ---------------------------------------------
 ==================================================================================================*/
@@ -41,7 +68,7 @@
     text-decoration: none;
     color: var(--font-main-color);
     margin: 0 1em 0 1em;
-    font-size: 40px;
+    font-size: var(--font-size-h1);
 }
 
 #nav-options a:hover {
