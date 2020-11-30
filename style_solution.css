@@ -407,7 +407,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
         width: auto;
     }
     .container-a {
-        margin: 0rem;
+        margin: 4rem;
         color: black;
     }
 }
@@ -461,7 +461,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
         margin: var(--margin-tracking-explainer-800);
     }
     .container-a {
-        margin: 5rem 0;
+        margin: 5rem 0rem;
     }
     .container-tech-info {
         margin: 0;
