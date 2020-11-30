@@ -23,11 +23,11 @@
     --font-size-h4: 1.5rem;
     --line-height: 1.7em;
     /* Margin 1200*/
-    --margin-value-1200: 1rem;
-    --margin-contact-1200: 1rem;
+    --margin-value-1200: 5rem;
+    --margin-contact-1200: 5rem;
     /* Margin 800*/
-    --margin-value-800: 5rem;
-    --margin-contact-800: 5rem;
+    --margin-value-800: 1rem;
+    --margin-contact-800: 1rem;
 }
 
 
