@@ -30,7 +30,6 @@
     --margin-contact-800: 1rem;
 }
 
-
 /*How to use var color: 
 background: var(--clr-primary);
 */
@@ -38,7 +37,7 @@ background: var(--clr-primary);
 html,
 body {
     font-family: "Lexend Deca", sans-serif;
-    font-size: 16px;
+    /* font-size: 20px; */
     background-color: white;
     margin: 0 auto;
     float: none;
@@ -69,7 +68,6 @@ p {
     padding-top: 2%;
 }
 
-
 /* Center Container to hold all later content*/
 
 .center-container {
@@ -81,7 +79,6 @@ p {
     align-items: center;
     width: auto;
 }
-
 
 /* ===================== Section A ======================== */
 
@@ -119,9 +116,7 @@ p {
     margin: 2rem 12rem 2rem 12rem;
 }
 
-
 /* ==================== Section A END ========================== */
-
 
 /* ==================== Section Values Start ==================== */
 
@@ -164,9 +159,7 @@ p {
     text-align: center;
 }
 
-
 /* =================== Section Values END */
-
 
 /* ==================== Section B ==================== */
 
@@ -217,7 +210,6 @@ p {
     text-align: center;
 }
 
-
 /* ===================== Section D ===================== */
 
 .container-contact {
@@ -233,7 +225,6 @@ p {
     justify-content: center;
     align-items: center;
 }
-
 
 /* .button {
     display: inline-block;
@@ -278,9 +269,7 @@ p {
     color: var(--clr-background-button);
 }
 
-
 /* ================= Section D END ================ */
-
 
 /* ======================= Section B END ========================== */
 
