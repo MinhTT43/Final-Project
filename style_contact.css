@@ -87,14 +87,12 @@ h1 {
 
 .container-description h1 {
     color: var(--clr-darkblue);
-    text-transform: uppercase;
     margin-bottom: 1em;
     font-size: 60px;
 }
 
 .container-description h2 {
     color: var(--clr-pink);
-    text-transform: uppercase;
     margin-bottom: 20px;
 }
 
@@ -108,7 +106,7 @@ h1 {
 
 .btn-primary {
     font-size: 15px;
-    background: var(--clr-darkblue);
+    background: var(--clr-pink);
     border: none;
     outline: none;
     cursor: pointer;
@@ -116,9 +114,11 @@ h1 {
     padding: 13px 20px;
     margin-bottom: 0px;
     border-radius: 10px;
-    text-transform: uppercase;
     text-decoration: none;
     color: white;
+    border: solid var(--clr-pink);
+    border-radius: var(--border-radius);
+    font-weight: normal;
 }
 
 .btn-primary:hover {
@@ -205,7 +205,6 @@ h1 {
     }
     .container-description h1 {
         color: var(--clr-darkblue);
-        text-transform: uppercase;
         margin-bottom: 1em;
         font-size: var(--font-size-h1);
     }
