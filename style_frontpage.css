@@ -24,6 +24,10 @@
     --font-color-secondary: #8f3a60;
     --font-hover: black;
     --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
+    /* Margin 1200*/
+    --margin: 5rem;
+    /* Margin 800*/
+    --margin-800: 1rem;
 }
 
 
@@ -69,64 +73,11 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 .center-container {
     max-width: 1440px;
     text-align: left;
-    margin: 0px auto;
+    margin: 1em auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
-}
-
-
-/* =================================================================================================
----------------------------------------------- Nav bar ---------------------------------------------
-==================================================================================================*/
-
-.center-container:first-of-type {
-    flex-direction: row;
-    display: flex;
-    justify-content: right;
-}
-
-#navbar-height {
-    height: 7em;
-}
-
-#nav-logo {
-    width: 20%;
-    height: 100%;
-    margin-left: 2.5%;
-}
-
-#nav-logo img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: var(--border-radius);
-}
-
-#nav-options {
-    width: 77.5%;
-}
-
-#nav-options li {
-    text-align: right;
-    list-style-type: none;
-}
-
-#nav-options a {
-    text-decoration: none;
-    color: var(--font-main-color);
-    margin: 0 1em 0 1em;
-    font-size: 40px;
-}
-
-#nav-options a:hover {
-    color: var(--font-hover);
-}
-
-#nav-spacing {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 
@@ -247,9 +198,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 ---------------------------------------------- Box container ---------------------------------------------
 ==================================================================================================*/
 
+.section-marg {}
+
 .box-container {
-    width: 100%;
-    margin: 0.5em 0;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     margin: 2em;
@@ -275,6 +226,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     height: 100%;
     max-width: 100%;
     object-fit: cover;
+    border-radius: var(--border-radius);
 }
 
 .img-2 {
@@ -348,7 +300,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .child-box-img-health-txt {
-    height: 1.3em;
+    height: auto;
     margin: 1%;
 }
 
@@ -356,13 +308,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 /* =================================================================================================
 ---------------------------------------------- Horizon ---------------------------------------------
 ==================================================================================================*/
-
-#the-tech-container {
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    width: 100%;
-    margin: 2.5em 2.5em 2.5em 2.5em;
-}
 
 #the-tech-img {
     margin: 5em 0 2.5em 0;
@@ -372,7 +317,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 #the-tech-img img {
     max-width: 100%;
-    max-height: 30em;
+    max-height: 100%;
 }
 
 #the-tech-txt {
@@ -380,7 +325,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .the-tech-img img {
-    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+    border-radius: var(--border-radius);
 }
 
 .the-tech-buttons {
@@ -392,7 +337,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .tech-button {
-    width: 150px;
+    max-width: 150px;
     padding: 10px 2px 10px 2px;
     border: solid var(--clr-background-button);
     border-radius: var(--border-radius);
@@ -412,50 +357,10 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     color: var(--clr-background-button);
 }
 
-
-/* =================================================================================================
----------------------------------------------- Footer ---------------------------------------------
-==================================================================================================*/
-
-footer {
-    height: 5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
-#kilder-dokumentasjon {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-}
-
-.footer-source {
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-}
-
-.footer-source a {
-    text-decoration: none;
-    color: var(--clr-primary);
-    padding: 10px;
-}
-
-.footer-source:hover a {
-    text-decoration: none;
-    color: black;
-}
-
-#footer-placement {
-    justify-content: center;
-}
-
-#placement-footer {
-    max-width: 845px;
-    display: flex;
-    justify-content: space-between;
+@media only screen and (max-width: 1440px) {
+    .box-container {
+        margin: 1em;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -473,17 +378,33 @@ footer {
         width: 49%;
         margin-left: 2rem;
     }
-    #nav-options a {
-        font-size: var(--font-size-h4);
-    }
     .box-container {
-        margin: 10px;
+        margin: var(--margin);
         padding: 20px;
     }
-    #placement-footer {
-        max-width: 845px;
+    .box-spacing {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+    }
+    .box-img {
+        width: 100%;
+        margin: 0;
+    }
+    .box-txt {
+        width: 100%;
+        margin: 0;
+    }
+    .box-img-placement {
+        height: 350px;
+    }
+    .child-box-img-health-img {
+        height: 80%;
+    }
+    #the-tech-txt {
+        margin: 2em;
+    }
+    #the-tech-container {
+        margin: 1em;
     }
 }
 
@@ -494,47 +415,12 @@ footer {
         margin: 20rem 0 20rem 0rem;
         text-align: center;
     }
+    .box-container {
+        margin: var(--margin-800);
+        padding: 20px;
+    }
     .box-img img {
         border-radius: var(--border-radius);
-    }
-    #navbar-height {
-        background-color: var(--clr-background-navtop);
-        height: 11em;
-    }
-    #nav-logo img {
-        width: 350px;
-        border-radius: var(--border-radius);
-    }
-    #nav-options a {
-        font-size: var(--font-size-h5);
-        line-height: 1.75rem;
-        color: white;
-        padding: 3px;
-    }
-    #nav-options {
-        width: 50%;
-    }
-    #nav-options a:hover {
-        color: #3e2028;
-    }
-    #nav-spacing {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    #nav-options li {
-        display: grid;
-    }
-    #nav-options a {
-        font-size: var(--font-size-h4);
-        padding: none;
-    }
-    #nav-logo {
-        width: auto;
-    }
-    #nav-logo {
-        width: auto;
     }
     .box-txt {
         width: 100%;
@@ -552,7 +438,6 @@ footer {
     .box-spacing {
         flex-direction: column;
     }
-    .child-box-img-health {}
     #hero-placement {
         flex-direction: column;
     }
@@ -567,12 +452,17 @@ footer {
         margin-bottom: 5rem;
     }
     .box-container {
-        text-align: left;
-        margin: 10px;
+        text-align: center;
+        margin: var(--margin-800);
         padding: 20px;
     }
     .box-spacing {
         margin: 1em;
+    }
+    .box-img-placement {
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
     #the-tech-txt {
         margin: 1em;
@@ -596,6 +486,12 @@ footer {
         margin: 10px;
         padding: 20px;
     }
+    .child-box-img-health-img {
+        width: 100%;
+    }
+    .child-box-img-health-txt {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -608,10 +504,27 @@ footer {
         margin: 10% 5% 10% 0;
     }
     .child-box-img-health-img {
-        height: 60%;
-        margin: 1% 1% 0 1%;
+        height: auto;
     }
     #hero-txt-box h1 {
         font-size: var(--font-size-h2);
+    }
+    .box-img-placement {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .box-container {
+        text-align: center;
+    }
+    .the-tech-buttons {
+        flex-direction: column;
+    }
+    .button-two {
+        margin-top: 1em;
+    }
+    .child-box-img-health {
+        width: 100%;
     }
 }
