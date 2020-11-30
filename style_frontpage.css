@@ -195,11 +195,14 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 ---------------------------------------------- Box container ---------------------------------------------
 ==================================================================================================*/
 
+.section-marg {
+    margin: 0 1em 0 1em;
+}
+
 .box-container {
-    width: 100%;
-    margin: 0.5em 0;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    margin: 2em;
 }
 
 .box-spacing {
@@ -222,6 +225,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     height: 100%;
     max-width: 100%;
     object-fit: cover;
+    border-radius: var(--border-radius);
 }
 
 .img-2 {
