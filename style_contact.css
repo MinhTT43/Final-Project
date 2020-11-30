@@ -13,6 +13,8 @@
     --line-height: 1.7em;
     --clr-background-navtop: #305e77;
     --clr-background-seperation: #02304a;
+    --border-radius: 0.2rem;
+    --clr-background-button: #02304a;
     /* Margin 1200*/
     --margin-map-1200: 2rem 5rem 0 5rem;
     /* Margin 800*/
@@ -53,6 +55,7 @@ h1 {
     flex-direction: column;
 }
 
+
 /*++++++++++++ Wrapper and container ++++++++++++*/
 
 .wrapper {
@@ -75,6 +78,7 @@ h1 {
     color: var(--clr-darkblue);
 }
 
+
 /*------------ Wrapper and container ------------*/
 
 .container-description {
@@ -85,14 +89,12 @@ h1 {
 
 .container-description h1 {
     color: var(--clr-darkblue);
-    text-transform: uppercase;
     margin-bottom: 1em;
     font-size: 60px;
 }
 
 .container-description h2 {
     color: var(--clr-pink);
-    text-transform: uppercase;
     margin-bottom: 20px;
 }
 
@@ -106,7 +108,6 @@ h1 {
 
 .btn-primary {
     font-size: 15px;
-    background: var(--clr-darkblue);
     border: none;
     outline: none;
     cursor: pointer;
@@ -114,9 +115,12 @@ h1 {
     padding: 13px 20px;
     margin-bottom: 0px;
     border-radius: 10px;
-    text-transform: uppercase;
     text-decoration: none;
-    color: white;
+    color: var(--clr-pink);
+    background-color: white;
+    border: solid var(--clr-background-button);
+    border-radius: var(--border-radius);
+    font-weight: bold;
 }
 
 .btn-primary:hover {
@@ -203,7 +207,6 @@ h1 {
     }
     .container-description h1 {
         color: var(--clr-darkblue);
-        text-transform: uppercase;
         margin-bottom: 1em;
         font-size: var(--font-size-h1);
     }
@@ -233,42 +236,6 @@ h1 {
         text-align: center;
         padding: 0.3rem;
         margin: 0.1rem;
-    }
-    #navbar-height {
-        background-color: var(--clr-background-navtop);
-        height: 11em;
-    }
-    #nav-logo img {
-        width: 350px;
-        border-radius: var(--border-radius);
-    }
-    #nav-options a {
-        font-size: var(--font-size-h5);
-        line-height: 1.75rem;
-        color: white;
-        padding: 3px;
-    }
-    #nav-options {
-        width: 50%;
-    }
-    #nav-options a:hover {
-        color: #3e2028;
-    }
-    #nav-spacing {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-    #nav-options li {
-        display: grid;
-    }
-    #nav-options a {
-        font-size: var(--font-size-h4);
-        padding: none;
-    }
-    #nav-logo {
-        width: auto;
     }
     .map-container {
         flex-direction: column;
