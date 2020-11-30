@@ -317,7 +317,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 #the-tech-img img {
     max-width: 100%;
-    max-height: 30em;
+    max-height: 100%;
 }
 
 #the-tech-txt {
@@ -325,7 +325,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .the-tech-img img {
-    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+    border-radius: var(--border-radius);
 }
 
 .the-tech-buttons {
@@ -337,7 +337,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .tech-button {
-    width: 150px;
+    max-width: 150px;
     padding: 10px 2px 10px 2px;
     border: solid var(--clr-background-button);
     border-radius: var(--border-radius);
@@ -498,7 +498,7 @@ footer {
         margin-bottom: 5rem;
     }
     .box-container {
-        text-align: left;
+        text-align: center;
         margin: var(--margin-800);
         padding: 20px;
     }
@@ -564,5 +564,11 @@ footer {
     }
     .box-container {
         text-align: left;
+    }
+    .the-tech-buttons {
+        flex-direction: column;
+    }
+    .button-two {
+        margin-top: 1em;
     }
 }
