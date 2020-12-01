@@ -185,6 +185,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 .container {
     width: 78%;
     margin-left: auto;
+    padding-bottom: 2em;
     height: auto;
     box-shadow: var(--box-shadow);
     display: flex;
