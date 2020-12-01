@@ -170,11 +170,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     flex-direction: column;
 }
 
-#reference-alignment {
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-}
-
 #oversikt a {
     font-size: var(--font-size-h4);
     line-height: 4rem;
@@ -183,9 +178,20 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .container {
+    width: 100%;
+    margin-left: auto;
+    padding-bottom: 5em;
+    height: auto;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-img {
     width: 78%;
     margin-left: auto;
-    padding-bottom: 2em;
+    padding-bottom: 5em;
     height: auto;
     box-shadow: var(--box-shadow);
     display: flex;
@@ -284,6 +290,19 @@ table.a {
         position: none;
         border-radius: var(--border-radius);
         box-shadow: var(--box-shadow);
+    }
+    .container-img {
+        width: 100%;
+        margin-left: auto;
+        padding-bottom: 5em;
+        height: auto;
+        box-shadow: var(--box-shadow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-meeting {
+        width: 100%;
     }
 }
 
