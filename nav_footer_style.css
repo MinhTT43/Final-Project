@@ -72,7 +72,7 @@
 }
 
 #nav-options a:hover {
-    color: var(--font-hover);
+    color: var(--clr-primary-hover);
 }
 
 #nav-spacing {
@@ -152,7 +152,7 @@ footer {
         width: 50%;
     }
     #nav-options a:hover {
-        color: #3e2028;
+        color: #c1d1d8;
     }
     #nav-spacing {
         display: flex;
