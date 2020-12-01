@@ -188,6 +188,18 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
 }
 
+.container-1 {
+    width: 100%;
+    margin-left: auto;
+    padding-bottom: 5em;
+    height: auto;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
 .container-img {
     width: 78%;
     margin-left: auto;

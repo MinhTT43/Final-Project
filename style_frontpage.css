@@ -277,11 +277,13 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 .box-img-health {
     width: 100%;
+    height: auto;
     display: flex;
-    text-align: center
+    text-align: center;
 }
 
 .box-img-health .box-img-placement {
+    height: auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -368,7 +370,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 @media only screen and (max-width: 1200px) {
     .box-img-health {
         flex-direction: column;
-        text-align: center
+        text-align: center;
     }
     #hero-img {
         width: 45%;
@@ -415,6 +417,12 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 @media only screen and (max-width: 1000px) {
+    .box-img img {
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: var(--border-radius);
+    }
     #hero-placement {
         flex-direction: column;
     }
@@ -441,15 +449,27 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
         margin-right: 20px;
         margin-left: 20px;
     }
-    .box-img img {
-        height: 100%;
-        max-width: 100%;
-        object-fit: cover;
-        border-radius: var(--border-radius);
-    }
     .tech-align {
         margin-top: 2em;
         margin-left: 0;
+    }
+    .box-img-health {
+        width: 100%;
+        text-align: center;
+    }
+    .box-img {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: unset;
+    }
+    .child-box-img-health-img {
+        width: 100%;
+    }
+    .box-img-placement {
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
 }
 
@@ -472,16 +492,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
         width: 100%;
         margin: 1em 0;
     }
-    .box-img-health {
-        width: 100%;
-        text-align: center;
-    }
-    .box-img {
-        width: 100%;
-        margin: 0;
-        flex-direction: column;
-        align-items: unset;
-    }
     .box-spacing {
         flex-direction: column;
     }
@@ -502,11 +512,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     }
     .box-spacing {
         margin: 1em;
-    }
-    .box-img-placement {
-        justify-content: center;
-        align-items: center;
-        height: auto;
     }
     #the-tech-txt {
         margin: 1em;
@@ -529,9 +534,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     #the-tech-container {
         margin: 10px;
         padding: 20px;
-    }
-    .child-box-img-health-img {
-        width: 100%;
     }
     .child-box-img-health-txt {
         text-align: center;

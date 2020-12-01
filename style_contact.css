@@ -19,6 +19,7 @@
     --clr-background-seperation: #02304a;
     --border-radius: 0.2rem;
     --clr-background-button: #02304a;
+    --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
     /* Margin 1200*/
     --margin-map-1200: 2rem 5rem 0 5rem;
     /* Margin 800*/
@@ -160,7 +161,7 @@ p {
 }
 
 .map-container {
-    box-shadow: 0 0 2rem var(--clr-lightgray);
+    box-shadow: var(--box-shadow);
     margin: 2rem;
     justify-content: space-evenly;
     flex-direction: row;
@@ -180,7 +181,7 @@ p {
 .banner-img img {
     width: 95%;
     height: auto;
-    box-shadow: 0 0 2rem var(--clr-lightgray);
+    box-shadow: var(--box-shadow);
 }
 
 .map-description {
@@ -225,6 +226,12 @@ p {
     }
     .map-container {
         margin: var(--margin-map-1200);
+    }
+    .container-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 4rem 1rem 0rem 1rem;
     }
 }
 
