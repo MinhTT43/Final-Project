@@ -22,6 +22,7 @@
     --font-size-h3: 1.75rem;
     --font-size-h4: 1.5rem;
     --line-height: 1.7em;
+    --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 3px 0px 6px rgba(0, 0, 0, 0.23);
     /* Margins 1200px */
     --margin-tracking-explainer: 2rem 2rem 0rem 2rem;
     --margin-tech-explainer: 2rem 5rem 0rem 5rem;
@@ -113,7 +114,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     flex: 1;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 14px 28px var(--clr-light-grey);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -159,7 +160,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: 0 -9999rem;
     /* add back section padding value */
     padding: 0.25rem 9999rem;
-    box-shadow: 0 14px 28px var(--clr-light-grey);
+    box-shadow: var(--box-shadow);
 }
 
 .container-b {
@@ -208,7 +209,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     margin: var(--margin-tracking-explainer);
     padding: 2rem;
     width: 400px;
-    box-shadow: 0 14px 28px var(--clr-light-grey);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
 }
 
@@ -251,7 +252,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     display: flex;
     /* margin: 2rem; */
     /* padding: 4rem; */
-    box-shadow: 0 14px 28px var(--clr-light-grey);
+    box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     width: auto;
     /* flex-direction: column; */
