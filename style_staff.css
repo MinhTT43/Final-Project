@@ -30,6 +30,7 @@
     --margin-contact-800: 1rem;
 }
 
+
 /*How to use var color: 
 background: var(--clr-primary);
 */
@@ -67,6 +68,7 @@ p {
     padding-top: 2%;
 }
 
+
 /* Center Container to hold all later content*/
 
 .center-container {
@@ -78,6 +80,7 @@ p {
     align-items: center;
     width: auto;
 }
+
 
 /* ===================== Section A ======================== */
 
@@ -114,7 +117,9 @@ p {
     margin: 2rem 12rem 2rem 12rem;
 }
 
+
 /* ==================== Section A END ========================== */
+
 
 /* ==================== Section Values Start ==================== */
 
@@ -152,7 +157,9 @@ p {
     text-align: center;
 }
 
+
 /* =================== Section Values END */
+
 
 /* ==================== Section B ==================== */
 
@@ -203,6 +210,7 @@ p {
     text-align: center;
 }
 
+
 /* ===================== Section D ===================== */
 
 .container-contact {
@@ -242,7 +250,9 @@ p {
     color: var(--clr-background-button);
 }
 
+
 /* ================= Section D END ================ */
+
 
 /* ======================= Section B END ========================== */
 

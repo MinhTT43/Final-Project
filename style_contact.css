@@ -103,7 +103,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 4rem;
+    margin: 4rem 12rem 0rem 12rem;
 }
 
 .container-description h1 {
@@ -128,7 +128,6 @@ p {
     border: none;
     outline: none;
     cursor: pointer;
-    transition: all 200ms ease-in;
     padding: 13px 20px;
     margin-bottom: 0px;
     border-radius: 10px;
@@ -141,7 +140,7 @@ p {
 }
 
 .btn-primary:hover {
-    background: var(--clr-pink);
+    background: white;
 }
 
 .section-a p {

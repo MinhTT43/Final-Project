@@ -118,7 +118,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     display: flex;
     height: auto;
     text-align: center;
-    margin: 5% 0 0 0;
+    margin: 1% 0 0 0;
 }
 
 .button-container {
