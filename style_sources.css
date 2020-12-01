@@ -76,11 +76,10 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 #oversikt {
-    max-width: 250px;
+    max-width: 20%;
     padding: 1em;
     display: flex;
     flex-direction: column;
-    position: fixed;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
@@ -147,8 +146,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 #reference-alignment {
-    width: 78%;
-    margin-left: auto;
+    width: 80%;
 }
 
 #nav-spacing {
@@ -179,7 +177,6 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 .container {
     width: 100%;
-    margin-left: auto;
     padding-bottom: 5em;
     height: auto;
     box-shadow: var(--box-shadow);
@@ -201,8 +198,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .container-img {
-    width: 78%;
-    margin-left: auto;
+    width: 100%;
     padding-bottom: 5em;
     height: auto;
     box-shadow: var(--box-shadow);
@@ -229,11 +225,11 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     text-align: center;
     font-size: var(--font-size-h3);
     width: 100%;
-    margin: 2em 0 2em 0;
+    margin: 1em 0 1em 0;
 }
 
 .container-meeting {
-    width: 78%;
+    width: 100%;
     margin-left: auto;
     height: auto;
     box-shadow: var(--box-shadow);
