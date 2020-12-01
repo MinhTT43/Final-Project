@@ -34,6 +34,7 @@
     --margin-sep: 2rem 1rem 2rem 1rem;
 }
 
+
 /*How to use var color: 
 background: var(--clr-primary);
 */
@@ -72,6 +73,7 @@ p {
     padding-top: 2%;
 }
 
+
 /*  =================Container for max width================
 
 Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
@@ -85,6 +87,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     align-items: center;
     width: auto;
 }
+
 
 /* =============Section A============= */
 
@@ -143,7 +146,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     padding-top: 2%;
 }
 
+
 /* ===============Section A END=========== */
+
 
 /* ==============Section B============== */
 
@@ -163,11 +168,22 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     color: white;
 }
 
+.section-b a {
+    color: white;
+    text-decoration: none;
+}
+
+.section-b a:hover {
+    color: var(--clr-primary-hover);
+}
+
 .section-b h1 {
     font-size: 2rem;
 }
 
+
 /* ===========Section B END=========== */
+
 
 /* =========Section C=============== */
 
@@ -220,7 +236,9 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     text-align: center;
 }
 
+
 /* ========================Section C END ======================== */
+
 
 /* =============== Section D =================== */
 
@@ -241,7 +259,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 }
 
 .tech-info-card {
-    max-width: 60%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,6 +277,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
 
 .tech-info-text {
     text-align: center;
+    width: 60%;
 }
 
 .button-container {
@@ -290,6 +309,7 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     background-color: var(--clr-background-);
     color: var(--clr-background-button);
 }
+
 
 /* ================== Section D END ===================== */
 
@@ -342,12 +362,19 @@ Easier to overwrite than body. Needs overflow-x: hidden; in html,body */
     .container-tech-info {
         margin: var(--margin-tech-info);
     }
-}
-
-@media only screen and (max-width: 800px) {
     .container-tech-info {
         flex-direction: column;
     }
+    .tech-info-card {
+        width: 80%;
+        padding-top: 2em;
+    }
+    .tech-info-text {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .tech-explainer {
         margin: var(--margin-tech-explainer-800);
     }
